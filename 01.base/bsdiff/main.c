@@ -3,10 +3,14 @@
 #include "bspatch.h"
 
 int main() {
-    char *file = "d:\\1.apk";
-    char *file1 = "d:\\2.apk";
-    char *fileout = "d:\\1dif.apk";
-    char *fileresult = "d:\\result.apk";
+//    char *file = "d:\\1.apk";
+//    char *file1 = "d:\\2.apk";
+//    char *fileout = "d:\\1dif.apk";
+//    char *fileresult = "d:\\result.apk";
+    char *file = "d:\\1.txt";
+    char *file1 = "d:\\1.1.txt";
+    char *fileout = "d:\\1dif.txt";
+    char *fileresult = "d:\\result.txt";
 //    FILE *fp = fopen(file, "rw");
 //    FILE *fp1 = fopen(file1, "rw");
 //    FILE *fpout = fopen(file1, "rw");
