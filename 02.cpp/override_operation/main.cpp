@@ -24,7 +24,6 @@ public:
     //¿½±´¹¹Ôìº¯Êı
     Base(const Base &base);
 
-
     Base &operator=(Base &base);
 
 };
