@@ -1,0 +1,4 @@
+D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug
