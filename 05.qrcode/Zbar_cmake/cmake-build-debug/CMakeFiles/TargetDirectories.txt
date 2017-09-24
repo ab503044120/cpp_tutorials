@@ -1,3 +1,7 @@
-D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/Zbar_cmake.dir
-D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/ZLIB.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/LIBPNG.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/LIBICONV.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/ZBAR.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/Zbar_cmake.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/CMakeFiles/rebuild_cache.dir

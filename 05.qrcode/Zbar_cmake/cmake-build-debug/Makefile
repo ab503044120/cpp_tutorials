@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe
+CMAKE_COMMAND = E:\DevelopTool\CLion-2017.2.1\bin\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe -E remove -f
+RM = E:\DevelopTool\CLion-2017.2.1\bin\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake
+CMAKE_SOURCE_DIR = E:\code\cpp_tutorials\05.qrcode\Zbar_cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug
+CMAKE_BINARY_DIR = E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	E:\DevelopTool\CLion-2017.2.1\bin\cmake\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	E:\DevelopTool\CLion-2017.2.1\bin\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,6 +110,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ZLIB
+
+# Build rule for target.
+ZLIB: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ZLIB
+.PHONY : ZLIB
+
+# fast build rule for target.
+ZLIB/fast:
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/build
+.PHONY : ZLIB/fast
+
+#=============================================================================
+# Target rules for targets named LIBPNG
+
+# Build rule for target.
+LIBPNG: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 LIBPNG
+.PHONY : LIBPNG
+
+# fast build rule for target.
+LIBPNG/fast:
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/build
+.PHONY : LIBPNG/fast
+
+#=============================================================================
+# Target rules for targets named LIBICONV
+
+# Build rule for target.
+LIBICONV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 LIBICONV
+.PHONY : LIBICONV
+
+# fast build rule for target.
+LIBICONV/fast:
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/build
+.PHONY : LIBICONV/fast
+
+#=============================================================================
+# Target rules for targets named ZBAR
+
+# Build rule for target.
+ZBAR: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ZBAR
+.PHONY : ZBAR
+
+# fast build rule for target.
+ZBAR/fast:
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/build
+.PHONY : ZBAR/fast
+
+#=============================================================================
 # Target rules for targets named Zbar_cmake
 
 # Build rule for target.
@@ -128,7 +180,7 @@ libiconv-1.15/lib/iconv.obj: libiconv-1.15/lib/iconv.c.obj
 
 # target to build an object file
 libiconv-1.15/lib/iconv.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/lib/iconv.c.obj
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/iconv.c.obj
 .PHONY : libiconv-1.15/lib/iconv.c.obj
 
 libiconv-1.15/lib/iconv.i: libiconv-1.15/lib/iconv.c.i
@@ -137,7 +189,7 @@ libiconv-1.15/lib/iconv.i: libiconv-1.15/lib/iconv.c.i
 
 # target to preprocess a source file
 libiconv-1.15/lib/iconv.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/lib/iconv.c.i
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/iconv.c.i
 .PHONY : libiconv-1.15/lib/iconv.c.i
 
 libiconv-1.15/lib/iconv.s: libiconv-1.15/lib/iconv.c.s
@@ -146,7 +198,7 @@ libiconv-1.15/lib/iconv.s: libiconv-1.15/lib/iconv.c.s
 
 # target to generate assembly for a file
 libiconv-1.15/lib/iconv.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/lib/iconv.c.s
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/iconv.c.s
 .PHONY : libiconv-1.15/lib/iconv.c.s
 
 libiconv-1.15/lib/relocatable.obj: libiconv-1.15/lib/relocatable.c.obj
@@ -155,7 +207,7 @@ libiconv-1.15/lib/relocatable.obj: libiconv-1.15/lib/relocatable.c.obj
 
 # target to build an object file
 libiconv-1.15/lib/relocatable.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/lib/relocatable.c.obj
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/relocatable.c.obj
 .PHONY : libiconv-1.15/lib/relocatable.c.obj
 
 libiconv-1.15/lib/relocatable.i: libiconv-1.15/lib/relocatable.c.i
@@ -164,7 +216,7 @@ libiconv-1.15/lib/relocatable.i: libiconv-1.15/lib/relocatable.c.i
 
 # target to preprocess a source file
 libiconv-1.15/lib/relocatable.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/lib/relocatable.c.i
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/relocatable.c.i
 .PHONY : libiconv-1.15/lib/relocatable.c.i
 
 libiconv-1.15/lib/relocatable.s: libiconv-1.15/lib/relocatable.c.s
@@ -173,7 +225,7 @@ libiconv-1.15/lib/relocatable.s: libiconv-1.15/lib/relocatable.c.s
 
 # target to generate assembly for a file
 libiconv-1.15/lib/relocatable.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/lib/relocatable.c.s
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/relocatable.c.s
 .PHONY : libiconv-1.15/lib/relocatable.c.s
 
 libiconv-1.15/libcharset/lib/localcharset.obj: libiconv-1.15/libcharset/lib/localcharset.c.obj
@@ -182,7 +234,7 @@ libiconv-1.15/libcharset/lib/localcharset.obj: libiconv-1.15/libcharset/lib/loca
 
 # target to build an object file
 libiconv-1.15/libcharset/lib/localcharset.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/libcharset/lib/localcharset.c.obj
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/libcharset/lib/localcharset.c.obj
 .PHONY : libiconv-1.15/libcharset/lib/localcharset.c.obj
 
 libiconv-1.15/libcharset/lib/localcharset.i: libiconv-1.15/libcharset/lib/localcharset.c.i
@@ -191,7 +243,7 @@ libiconv-1.15/libcharset/lib/localcharset.i: libiconv-1.15/libcharset/lib/localc
 
 # target to preprocess a source file
 libiconv-1.15/libcharset/lib/localcharset.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/libcharset/lib/localcharset.c.i
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/libcharset/lib/localcharset.c.i
 .PHONY : libiconv-1.15/libcharset/lib/localcharset.c.i
 
 libiconv-1.15/libcharset/lib/localcharset.s: libiconv-1.15/libcharset/lib/localcharset.c.s
@@ -200,7 +252,7 @@ libiconv-1.15/libcharset/lib/localcharset.s: libiconv-1.15/libcharset/lib/localc
 
 # target to generate assembly for a file
 libiconv-1.15/libcharset/lib/localcharset.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libiconv-1.15/libcharset/lib/localcharset.c.s
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/libiconv-1.15/libcharset/lib/localcharset.c.s
 .PHONY : libiconv-1.15/libcharset/lib/localcharset.c.s
 
 libpng/png.obj: libpng/png.c.obj
@@ -209,7 +261,7 @@ libpng/png.obj: libpng/png.c.obj
 
 # target to build an object file
 libpng/png.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/png.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/png.c.obj
 .PHONY : libpng/png.c.obj
 
 libpng/png.i: libpng/png.c.i
@@ -218,7 +270,7 @@ libpng/png.i: libpng/png.c.i
 
 # target to preprocess a source file
 libpng/png.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/png.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/png.c.i
 .PHONY : libpng/png.c.i
 
 libpng/png.s: libpng/png.c.s
@@ -227,7 +279,7 @@ libpng/png.s: libpng/png.c.s
 
 # target to generate assembly for a file
 libpng/png.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/png.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/png.c.s
 .PHONY : libpng/png.c.s
 
 libpng/pngerror.obj: libpng/pngerror.c.obj
@@ -236,7 +288,7 @@ libpng/pngerror.obj: libpng/pngerror.c.obj
 
 # target to build an object file
 libpng/pngerror.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngerror.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngerror.c.obj
 .PHONY : libpng/pngerror.c.obj
 
 libpng/pngerror.i: libpng/pngerror.c.i
@@ -245,7 +297,7 @@ libpng/pngerror.i: libpng/pngerror.c.i
 
 # target to preprocess a source file
 libpng/pngerror.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngerror.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngerror.c.i
 .PHONY : libpng/pngerror.c.i
 
 libpng/pngerror.s: libpng/pngerror.c.s
@@ -254,7 +306,7 @@ libpng/pngerror.s: libpng/pngerror.c.s
 
 # target to generate assembly for a file
 libpng/pngerror.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngerror.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngerror.c.s
 .PHONY : libpng/pngerror.c.s
 
 libpng/pnggccrd.obj: libpng/pnggccrd.c.obj
@@ -263,7 +315,7 @@ libpng/pnggccrd.obj: libpng/pnggccrd.c.obj
 
 # target to build an object file
 libpng/pnggccrd.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pnggccrd.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pnggccrd.c.obj
 .PHONY : libpng/pnggccrd.c.obj
 
 libpng/pnggccrd.i: libpng/pnggccrd.c.i
@@ -272,7 +324,7 @@ libpng/pnggccrd.i: libpng/pnggccrd.c.i
 
 # target to preprocess a source file
 libpng/pnggccrd.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pnggccrd.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pnggccrd.c.i
 .PHONY : libpng/pnggccrd.c.i
 
 libpng/pnggccrd.s: libpng/pnggccrd.c.s
@@ -281,7 +333,7 @@ libpng/pnggccrd.s: libpng/pnggccrd.c.s
 
 # target to generate assembly for a file
 libpng/pnggccrd.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pnggccrd.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pnggccrd.c.s
 .PHONY : libpng/pnggccrd.c.s
 
 libpng/pngget.obj: libpng/pngget.c.obj
@@ -290,7 +342,7 @@ libpng/pngget.obj: libpng/pngget.c.obj
 
 # target to build an object file
 libpng/pngget.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngget.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngget.c.obj
 .PHONY : libpng/pngget.c.obj
 
 libpng/pngget.i: libpng/pngget.c.i
@@ -299,7 +351,7 @@ libpng/pngget.i: libpng/pngget.c.i
 
 # target to preprocess a source file
 libpng/pngget.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngget.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngget.c.i
 .PHONY : libpng/pngget.c.i
 
 libpng/pngget.s: libpng/pngget.c.s
@@ -308,7 +360,7 @@ libpng/pngget.s: libpng/pngget.c.s
 
 # target to generate assembly for a file
 libpng/pngget.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngget.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngget.c.s
 .PHONY : libpng/pngget.c.s
 
 libpng/pngmem.obj: libpng/pngmem.c.obj
@@ -317,7 +369,7 @@ libpng/pngmem.obj: libpng/pngmem.c.obj
 
 # target to build an object file
 libpng/pngmem.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngmem.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngmem.c.obj
 .PHONY : libpng/pngmem.c.obj
 
 libpng/pngmem.i: libpng/pngmem.c.i
@@ -326,7 +378,7 @@ libpng/pngmem.i: libpng/pngmem.c.i
 
 # target to preprocess a source file
 libpng/pngmem.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngmem.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngmem.c.i
 .PHONY : libpng/pngmem.c.i
 
 libpng/pngmem.s: libpng/pngmem.c.s
@@ -335,7 +387,7 @@ libpng/pngmem.s: libpng/pngmem.c.s
 
 # target to generate assembly for a file
 libpng/pngmem.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngmem.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngmem.c.s
 .PHONY : libpng/pngmem.c.s
 
 libpng/pngpread.obj: libpng/pngpread.c.obj
@@ -344,7 +396,7 @@ libpng/pngpread.obj: libpng/pngpread.c.obj
 
 # target to build an object file
 libpng/pngpread.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngpread.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngpread.c.obj
 .PHONY : libpng/pngpread.c.obj
 
 libpng/pngpread.i: libpng/pngpread.c.i
@@ -353,7 +405,7 @@ libpng/pngpread.i: libpng/pngpread.c.i
 
 # target to preprocess a source file
 libpng/pngpread.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngpread.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngpread.c.i
 .PHONY : libpng/pngpread.c.i
 
 libpng/pngpread.s: libpng/pngpread.c.s
@@ -362,7 +414,7 @@ libpng/pngpread.s: libpng/pngpread.c.s
 
 # target to generate assembly for a file
 libpng/pngpread.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngpread.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngpread.c.s
 .PHONY : libpng/pngpread.c.s
 
 libpng/pngread.obj: libpng/pngread.c.obj
@@ -371,7 +423,7 @@ libpng/pngread.obj: libpng/pngread.c.obj
 
 # target to build an object file
 libpng/pngread.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngread.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngread.c.obj
 .PHONY : libpng/pngread.c.obj
 
 libpng/pngread.i: libpng/pngread.c.i
@@ -380,7 +432,7 @@ libpng/pngread.i: libpng/pngread.c.i
 
 # target to preprocess a source file
 libpng/pngread.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngread.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngread.c.i
 .PHONY : libpng/pngread.c.i
 
 libpng/pngread.s: libpng/pngread.c.s
@@ -389,7 +441,7 @@ libpng/pngread.s: libpng/pngread.c.s
 
 # target to generate assembly for a file
 libpng/pngread.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngread.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngread.c.s
 .PHONY : libpng/pngread.c.s
 
 libpng/pngrio.obj: libpng/pngrio.c.obj
@@ -398,7 +450,7 @@ libpng/pngrio.obj: libpng/pngrio.c.obj
 
 # target to build an object file
 libpng/pngrio.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrio.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrio.c.obj
 .PHONY : libpng/pngrio.c.obj
 
 libpng/pngrio.i: libpng/pngrio.c.i
@@ -407,7 +459,7 @@ libpng/pngrio.i: libpng/pngrio.c.i
 
 # target to preprocess a source file
 libpng/pngrio.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrio.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrio.c.i
 .PHONY : libpng/pngrio.c.i
 
 libpng/pngrio.s: libpng/pngrio.c.s
@@ -416,7 +468,7 @@ libpng/pngrio.s: libpng/pngrio.c.s
 
 # target to generate assembly for a file
 libpng/pngrio.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrio.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrio.c.s
 .PHONY : libpng/pngrio.c.s
 
 libpng/pngrtran.obj: libpng/pngrtran.c.obj
@@ -425,7 +477,7 @@ libpng/pngrtran.obj: libpng/pngrtran.c.obj
 
 # target to build an object file
 libpng/pngrtran.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrtran.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrtran.c.obj
 .PHONY : libpng/pngrtran.c.obj
 
 libpng/pngrtran.i: libpng/pngrtran.c.i
@@ -434,7 +486,7 @@ libpng/pngrtran.i: libpng/pngrtran.c.i
 
 # target to preprocess a source file
 libpng/pngrtran.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrtran.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrtran.c.i
 .PHONY : libpng/pngrtran.c.i
 
 libpng/pngrtran.s: libpng/pngrtran.c.s
@@ -443,7 +495,7 @@ libpng/pngrtran.s: libpng/pngrtran.c.s
 
 # target to generate assembly for a file
 libpng/pngrtran.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrtran.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrtran.c.s
 .PHONY : libpng/pngrtran.c.s
 
 libpng/pngrutil.obj: libpng/pngrutil.c.obj
@@ -452,7 +504,7 @@ libpng/pngrutil.obj: libpng/pngrutil.c.obj
 
 # target to build an object file
 libpng/pngrutil.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrutil.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrutil.c.obj
 .PHONY : libpng/pngrutil.c.obj
 
 libpng/pngrutil.i: libpng/pngrutil.c.i
@@ -461,7 +513,7 @@ libpng/pngrutil.i: libpng/pngrutil.c.i
 
 # target to preprocess a source file
 libpng/pngrutil.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrutil.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrutil.c.i
 .PHONY : libpng/pngrutil.c.i
 
 libpng/pngrutil.s: libpng/pngrutil.c.s
@@ -470,7 +522,7 @@ libpng/pngrutil.s: libpng/pngrutil.c.s
 
 # target to generate assembly for a file
 libpng/pngrutil.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngrutil.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngrutil.c.s
 .PHONY : libpng/pngrutil.c.s
 
 libpng/pngset.obj: libpng/pngset.c.obj
@@ -479,7 +531,7 @@ libpng/pngset.obj: libpng/pngset.c.obj
 
 # target to build an object file
 libpng/pngset.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngset.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngset.c.obj
 .PHONY : libpng/pngset.c.obj
 
 libpng/pngset.i: libpng/pngset.c.i
@@ -488,7 +540,7 @@ libpng/pngset.i: libpng/pngset.c.i
 
 # target to preprocess a source file
 libpng/pngset.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngset.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngset.c.i
 .PHONY : libpng/pngset.c.i
 
 libpng/pngset.s: libpng/pngset.c.s
@@ -497,7 +549,7 @@ libpng/pngset.s: libpng/pngset.c.s
 
 # target to generate assembly for a file
 libpng/pngset.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngset.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngset.c.s
 .PHONY : libpng/pngset.c.s
 
 libpng/pngtest.obj: libpng/pngtest.c.obj
@@ -506,7 +558,7 @@ libpng/pngtest.obj: libpng/pngtest.c.obj
 
 # target to build an object file
 libpng/pngtest.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngtest.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngtest.c.obj
 .PHONY : libpng/pngtest.c.obj
 
 libpng/pngtest.i: libpng/pngtest.c.i
@@ -515,7 +567,7 @@ libpng/pngtest.i: libpng/pngtest.c.i
 
 # target to preprocess a source file
 libpng/pngtest.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngtest.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngtest.c.i
 .PHONY : libpng/pngtest.c.i
 
 libpng/pngtest.s: libpng/pngtest.c.s
@@ -524,7 +576,7 @@ libpng/pngtest.s: libpng/pngtest.c.s
 
 # target to generate assembly for a file
 libpng/pngtest.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngtest.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngtest.c.s
 .PHONY : libpng/pngtest.c.s
 
 libpng/pngtrans.obj: libpng/pngtrans.c.obj
@@ -533,7 +585,7 @@ libpng/pngtrans.obj: libpng/pngtrans.c.obj
 
 # target to build an object file
 libpng/pngtrans.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngtrans.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngtrans.c.obj
 .PHONY : libpng/pngtrans.c.obj
 
 libpng/pngtrans.i: libpng/pngtrans.c.i
@@ -542,7 +594,7 @@ libpng/pngtrans.i: libpng/pngtrans.c.i
 
 # target to preprocess a source file
 libpng/pngtrans.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngtrans.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngtrans.c.i
 .PHONY : libpng/pngtrans.c.i
 
 libpng/pngtrans.s: libpng/pngtrans.c.s
@@ -551,7 +603,7 @@ libpng/pngtrans.s: libpng/pngtrans.c.s
 
 # target to generate assembly for a file
 libpng/pngtrans.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngtrans.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngtrans.c.s
 .PHONY : libpng/pngtrans.c.s
 
 libpng/pngvcrd.obj: libpng/pngvcrd.c.obj
@@ -560,7 +612,7 @@ libpng/pngvcrd.obj: libpng/pngvcrd.c.obj
 
 # target to build an object file
 libpng/pngvcrd.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngvcrd.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngvcrd.c.obj
 .PHONY : libpng/pngvcrd.c.obj
 
 libpng/pngvcrd.i: libpng/pngvcrd.c.i
@@ -569,7 +621,7 @@ libpng/pngvcrd.i: libpng/pngvcrd.c.i
 
 # target to preprocess a source file
 libpng/pngvcrd.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngvcrd.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngvcrd.c.i
 .PHONY : libpng/pngvcrd.c.i
 
 libpng/pngvcrd.s: libpng/pngvcrd.c.s
@@ -578,7 +630,7 @@ libpng/pngvcrd.s: libpng/pngvcrd.c.s
 
 # target to generate assembly for a file
 libpng/pngvcrd.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngvcrd.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngvcrd.c.s
 .PHONY : libpng/pngvcrd.c.s
 
 libpng/pngwio.obj: libpng/pngwio.c.obj
@@ -587,7 +639,7 @@ libpng/pngwio.obj: libpng/pngwio.c.obj
 
 # target to build an object file
 libpng/pngwio.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwio.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwio.c.obj
 .PHONY : libpng/pngwio.c.obj
 
 libpng/pngwio.i: libpng/pngwio.c.i
@@ -596,7 +648,7 @@ libpng/pngwio.i: libpng/pngwio.c.i
 
 # target to preprocess a source file
 libpng/pngwio.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwio.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwio.c.i
 .PHONY : libpng/pngwio.c.i
 
 libpng/pngwio.s: libpng/pngwio.c.s
@@ -605,7 +657,7 @@ libpng/pngwio.s: libpng/pngwio.c.s
 
 # target to generate assembly for a file
 libpng/pngwio.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwio.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwio.c.s
 .PHONY : libpng/pngwio.c.s
 
 libpng/pngwrite.obj: libpng/pngwrite.c.obj
@@ -614,7 +666,7 @@ libpng/pngwrite.obj: libpng/pngwrite.c.obj
 
 # target to build an object file
 libpng/pngwrite.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwrite.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwrite.c.obj
 .PHONY : libpng/pngwrite.c.obj
 
 libpng/pngwrite.i: libpng/pngwrite.c.i
@@ -623,7 +675,7 @@ libpng/pngwrite.i: libpng/pngwrite.c.i
 
 # target to preprocess a source file
 libpng/pngwrite.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwrite.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwrite.c.i
 .PHONY : libpng/pngwrite.c.i
 
 libpng/pngwrite.s: libpng/pngwrite.c.s
@@ -632,7 +684,7 @@ libpng/pngwrite.s: libpng/pngwrite.c.s
 
 # target to generate assembly for a file
 libpng/pngwrite.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwrite.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwrite.c.s
 .PHONY : libpng/pngwrite.c.s
 
 libpng/pngwtran.obj: libpng/pngwtran.c.obj
@@ -641,7 +693,7 @@ libpng/pngwtran.obj: libpng/pngwtran.c.obj
 
 # target to build an object file
 libpng/pngwtran.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwtran.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwtran.c.obj
 .PHONY : libpng/pngwtran.c.obj
 
 libpng/pngwtran.i: libpng/pngwtran.c.i
@@ -650,7 +702,7 @@ libpng/pngwtran.i: libpng/pngwtran.c.i
 
 # target to preprocess a source file
 libpng/pngwtran.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwtran.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwtran.c.i
 .PHONY : libpng/pngwtran.c.i
 
 libpng/pngwtran.s: libpng/pngwtran.c.s
@@ -659,7 +711,7 @@ libpng/pngwtran.s: libpng/pngwtran.c.s
 
 # target to generate assembly for a file
 libpng/pngwtran.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwtran.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwtran.c.s
 .PHONY : libpng/pngwtran.c.s
 
 libpng/pngwutil.obj: libpng/pngwutil.c.obj
@@ -668,7 +720,7 @@ libpng/pngwutil.obj: libpng/pngwutil.c.obj
 
 # target to build an object file
 libpng/pngwutil.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwutil.c.obj
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwutil.c.obj
 .PHONY : libpng/pngwutil.c.obj
 
 libpng/pngwutil.i: libpng/pngwutil.c.i
@@ -677,7 +729,7 @@ libpng/pngwutil.i: libpng/pngwutil.c.i
 
 # target to preprocess a source file
 libpng/pngwutil.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwutil.c.i
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwutil.c.i
 .PHONY : libpng/pngwutil.c.i
 
 libpng/pngwutil.s: libpng/pngwutil.c.s
@@ -686,7 +738,7 @@ libpng/pngwutil.s: libpng/pngwutil.c.s
 
 # target to generate assembly for a file
 libpng/pngwutil.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/libpng/pngwutil.c.s
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/libpng/pngwutil.c.s
 .PHONY : libpng/pngwutil.c.s
 
 scan_image.obj: scan_image.c.obj
@@ -722,7 +774,7 @@ zbar/config.obj: zbar/config.c.obj
 
 # target to build an object file
 zbar/config.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/config.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/config.c.obj
 .PHONY : zbar/config.c.obj
 
 zbar/config.i: zbar/config.c.i
@@ -731,7 +783,7 @@ zbar/config.i: zbar/config.c.i
 
 # target to preprocess a source file
 zbar/config.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/config.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/config.c.i
 .PHONY : zbar/config.c.i
 
 zbar/config.s: zbar/config.c.s
@@ -740,7 +792,7 @@ zbar/config.s: zbar/config.c.s
 
 # target to generate assembly for a file
 zbar/config.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/config.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/config.c.s
 .PHONY : zbar/config.c.s
 
 zbar/convert.obj: zbar/convert.c.obj
@@ -749,7 +801,7 @@ zbar/convert.obj: zbar/convert.c.obj
 
 # target to build an object file
 zbar/convert.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/convert.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/convert.c.obj
 .PHONY : zbar/convert.c.obj
 
 zbar/convert.i: zbar/convert.c.i
@@ -758,7 +810,7 @@ zbar/convert.i: zbar/convert.c.i
 
 # target to preprocess a source file
 zbar/convert.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/convert.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/convert.c.i
 .PHONY : zbar/convert.c.i
 
 zbar/convert.s: zbar/convert.c.s
@@ -767,7 +819,7 @@ zbar/convert.s: zbar/convert.c.s
 
 # target to generate assembly for a file
 zbar/convert.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/convert.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/convert.c.s
 .PHONY : zbar/convert.c.s
 
 zbar/decoder.obj: zbar/decoder.c.obj
@@ -776,7 +828,7 @@ zbar/decoder.obj: zbar/decoder.c.obj
 
 # target to build an object file
 zbar/decoder.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder.c.obj
 .PHONY : zbar/decoder.c.obj
 
 zbar/decoder.i: zbar/decoder.c.i
@@ -785,7 +837,7 @@ zbar/decoder.i: zbar/decoder.c.i
 
 # target to preprocess a source file
 zbar/decoder.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder.c.i
 .PHONY : zbar/decoder.c.i
 
 zbar/decoder.s: zbar/decoder.c.s
@@ -794,7 +846,7 @@ zbar/decoder.s: zbar/decoder.c.s
 
 # target to generate assembly for a file
 zbar/decoder.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder.c.s
 .PHONY : zbar/decoder.c.s
 
 zbar/decoder/codabar.obj: zbar/decoder/codabar.c.obj
@@ -803,7 +855,7 @@ zbar/decoder/codabar.obj: zbar/decoder/codabar.c.obj
 
 # target to build an object file
 zbar/decoder/codabar.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/codabar.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/codabar.c.obj
 .PHONY : zbar/decoder/codabar.c.obj
 
 zbar/decoder/codabar.i: zbar/decoder/codabar.c.i
@@ -812,7 +864,7 @@ zbar/decoder/codabar.i: zbar/decoder/codabar.c.i
 
 # target to preprocess a source file
 zbar/decoder/codabar.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/codabar.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/codabar.c.i
 .PHONY : zbar/decoder/codabar.c.i
 
 zbar/decoder/codabar.s: zbar/decoder/codabar.c.s
@@ -821,7 +873,7 @@ zbar/decoder/codabar.s: zbar/decoder/codabar.c.s
 
 # target to generate assembly for a file
 zbar/decoder/codabar.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/codabar.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/codabar.c.s
 .PHONY : zbar/decoder/codabar.c.s
 
 zbar/decoder/code128.obj: zbar/decoder/code128.c.obj
@@ -830,7 +882,7 @@ zbar/decoder/code128.obj: zbar/decoder/code128.c.obj
 
 # target to build an object file
 zbar/decoder/code128.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code128.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code128.c.obj
 .PHONY : zbar/decoder/code128.c.obj
 
 zbar/decoder/code128.i: zbar/decoder/code128.c.i
@@ -839,7 +891,7 @@ zbar/decoder/code128.i: zbar/decoder/code128.c.i
 
 # target to preprocess a source file
 zbar/decoder/code128.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code128.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code128.c.i
 .PHONY : zbar/decoder/code128.c.i
 
 zbar/decoder/code128.s: zbar/decoder/code128.c.s
@@ -848,7 +900,7 @@ zbar/decoder/code128.s: zbar/decoder/code128.c.s
 
 # target to generate assembly for a file
 zbar/decoder/code128.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code128.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code128.c.s
 .PHONY : zbar/decoder/code128.c.s
 
 zbar/decoder/code39.obj: zbar/decoder/code39.c.obj
@@ -857,7 +909,7 @@ zbar/decoder/code39.obj: zbar/decoder/code39.c.obj
 
 # target to build an object file
 zbar/decoder/code39.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code39.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code39.c.obj
 .PHONY : zbar/decoder/code39.c.obj
 
 zbar/decoder/code39.i: zbar/decoder/code39.c.i
@@ -866,7 +918,7 @@ zbar/decoder/code39.i: zbar/decoder/code39.c.i
 
 # target to preprocess a source file
 zbar/decoder/code39.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code39.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code39.c.i
 .PHONY : zbar/decoder/code39.c.i
 
 zbar/decoder/code39.s: zbar/decoder/code39.c.s
@@ -875,7 +927,7 @@ zbar/decoder/code39.s: zbar/decoder/code39.c.s
 
 # target to generate assembly for a file
 zbar/decoder/code39.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code39.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code39.c.s
 .PHONY : zbar/decoder/code39.c.s
 
 zbar/decoder/code93.obj: zbar/decoder/code93.c.obj
@@ -884,7 +936,7 @@ zbar/decoder/code93.obj: zbar/decoder/code93.c.obj
 
 # target to build an object file
 zbar/decoder/code93.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code93.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code93.c.obj
 .PHONY : zbar/decoder/code93.c.obj
 
 zbar/decoder/code93.i: zbar/decoder/code93.c.i
@@ -893,7 +945,7 @@ zbar/decoder/code93.i: zbar/decoder/code93.c.i
 
 # target to preprocess a source file
 zbar/decoder/code93.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code93.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code93.c.i
 .PHONY : zbar/decoder/code93.c.i
 
 zbar/decoder/code93.s: zbar/decoder/code93.c.s
@@ -902,7 +954,7 @@ zbar/decoder/code93.s: zbar/decoder/code93.c.s
 
 # target to generate assembly for a file
 zbar/decoder/code93.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/code93.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/code93.c.s
 .PHONY : zbar/decoder/code93.c.s
 
 zbar/decoder/databar.obj: zbar/decoder/databar.c.obj
@@ -911,7 +963,7 @@ zbar/decoder/databar.obj: zbar/decoder/databar.c.obj
 
 # target to build an object file
 zbar/decoder/databar.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/databar.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/databar.c.obj
 .PHONY : zbar/decoder/databar.c.obj
 
 zbar/decoder/databar.i: zbar/decoder/databar.c.i
@@ -920,7 +972,7 @@ zbar/decoder/databar.i: zbar/decoder/databar.c.i
 
 # target to preprocess a source file
 zbar/decoder/databar.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/databar.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/databar.c.i
 .PHONY : zbar/decoder/databar.c.i
 
 zbar/decoder/databar.s: zbar/decoder/databar.c.s
@@ -929,7 +981,7 @@ zbar/decoder/databar.s: zbar/decoder/databar.c.s
 
 # target to generate assembly for a file
 zbar/decoder/databar.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/databar.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/databar.c.s
 .PHONY : zbar/decoder/databar.c.s
 
 zbar/decoder/ean.obj: zbar/decoder/ean.c.obj
@@ -938,7 +990,7 @@ zbar/decoder/ean.obj: zbar/decoder/ean.c.obj
 
 # target to build an object file
 zbar/decoder/ean.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/ean.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/ean.c.obj
 .PHONY : zbar/decoder/ean.c.obj
 
 zbar/decoder/ean.i: zbar/decoder/ean.c.i
@@ -947,7 +999,7 @@ zbar/decoder/ean.i: zbar/decoder/ean.c.i
 
 # target to preprocess a source file
 zbar/decoder/ean.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/ean.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/ean.c.i
 .PHONY : zbar/decoder/ean.c.i
 
 zbar/decoder/ean.s: zbar/decoder/ean.c.s
@@ -956,7 +1008,7 @@ zbar/decoder/ean.s: zbar/decoder/ean.c.s
 
 # target to generate assembly for a file
 zbar/decoder/ean.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/ean.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/ean.c.s
 .PHONY : zbar/decoder/ean.c.s
 
 zbar/decoder/i25.obj: zbar/decoder/i25.c.obj
@@ -965,7 +1017,7 @@ zbar/decoder/i25.obj: zbar/decoder/i25.c.obj
 
 # target to build an object file
 zbar/decoder/i25.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/i25.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/i25.c.obj
 .PHONY : zbar/decoder/i25.c.obj
 
 zbar/decoder/i25.i: zbar/decoder/i25.c.i
@@ -974,7 +1026,7 @@ zbar/decoder/i25.i: zbar/decoder/i25.c.i
 
 # target to preprocess a source file
 zbar/decoder/i25.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/i25.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/i25.c.i
 .PHONY : zbar/decoder/i25.c.i
 
 zbar/decoder/i25.s: zbar/decoder/i25.c.s
@@ -983,7 +1035,7 @@ zbar/decoder/i25.s: zbar/decoder/i25.c.s
 
 # target to generate assembly for a file
 zbar/decoder/i25.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/i25.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/i25.c.s
 .PHONY : zbar/decoder/i25.c.s
 
 zbar/decoder/qr_finder.obj: zbar/decoder/qr_finder.c.obj
@@ -992,7 +1044,7 @@ zbar/decoder/qr_finder.obj: zbar/decoder/qr_finder.c.obj
 
 # target to build an object file
 zbar/decoder/qr_finder.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/qr_finder.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/qr_finder.c.obj
 .PHONY : zbar/decoder/qr_finder.c.obj
 
 zbar/decoder/qr_finder.i: zbar/decoder/qr_finder.c.i
@@ -1001,7 +1053,7 @@ zbar/decoder/qr_finder.i: zbar/decoder/qr_finder.c.i
 
 # target to preprocess a source file
 zbar/decoder/qr_finder.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/qr_finder.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/qr_finder.c.i
 .PHONY : zbar/decoder/qr_finder.c.i
 
 zbar/decoder/qr_finder.s: zbar/decoder/qr_finder.c.s
@@ -1010,7 +1062,7 @@ zbar/decoder/qr_finder.s: zbar/decoder/qr_finder.c.s
 
 # target to generate assembly for a file
 zbar/decoder/qr_finder.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/decoder/qr_finder.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/decoder/qr_finder.c.s
 .PHONY : zbar/decoder/qr_finder.c.s
 
 zbar/error.obj: zbar/error.c.obj
@@ -1019,7 +1071,7 @@ zbar/error.obj: zbar/error.c.obj
 
 # target to build an object file
 zbar/error.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/error.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/error.c.obj
 .PHONY : zbar/error.c.obj
 
 zbar/error.i: zbar/error.c.i
@@ -1028,7 +1080,7 @@ zbar/error.i: zbar/error.c.i
 
 # target to preprocess a source file
 zbar/error.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/error.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/error.c.i
 .PHONY : zbar/error.c.i
 
 zbar/error.s: zbar/error.c.s
@@ -1037,7 +1089,7 @@ zbar/error.s: zbar/error.c.s
 
 # target to generate assembly for a file
 zbar/error.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/error.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/error.c.s
 .PHONY : zbar/error.c.s
 
 zbar/image.obj: zbar/image.c.obj
@@ -1046,7 +1098,7 @@ zbar/image.obj: zbar/image.c.obj
 
 # target to build an object file
 zbar/image.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/image.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/image.c.obj
 .PHONY : zbar/image.c.obj
 
 zbar/image.i: zbar/image.c.i
@@ -1055,7 +1107,7 @@ zbar/image.i: zbar/image.c.i
 
 # target to preprocess a source file
 zbar/image.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/image.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/image.c.i
 .PHONY : zbar/image.c.i
 
 zbar/image.s: zbar/image.c.s
@@ -1064,7 +1116,7 @@ zbar/image.s: zbar/image.c.s
 
 # target to generate assembly for a file
 zbar/image.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/image.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/image.c.s
 .PHONY : zbar/image.c.s
 
 zbar/img_scanner.obj: zbar/img_scanner.c.obj
@@ -1073,7 +1125,7 @@ zbar/img_scanner.obj: zbar/img_scanner.c.obj
 
 # target to build an object file
 zbar/img_scanner.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/img_scanner.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/img_scanner.c.obj
 .PHONY : zbar/img_scanner.c.obj
 
 zbar/img_scanner.i: zbar/img_scanner.c.i
@@ -1082,7 +1134,7 @@ zbar/img_scanner.i: zbar/img_scanner.c.i
 
 # target to preprocess a source file
 zbar/img_scanner.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/img_scanner.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/img_scanner.c.i
 .PHONY : zbar/img_scanner.c.i
 
 zbar/img_scanner.s: zbar/img_scanner.c.s
@@ -1091,7 +1143,7 @@ zbar/img_scanner.s: zbar/img_scanner.c.s
 
 # target to generate assembly for a file
 zbar/img_scanner.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/img_scanner.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/img_scanner.c.s
 .PHONY : zbar/img_scanner.c.s
 
 zbar/qrcode/bch15_5.obj: zbar/qrcode/bch15_5.c.obj
@@ -1100,7 +1152,7 @@ zbar/qrcode/bch15_5.obj: zbar/qrcode/bch15_5.c.obj
 
 # target to build an object file
 zbar/qrcode/bch15_5.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/bch15_5.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/bch15_5.c.obj
 .PHONY : zbar/qrcode/bch15_5.c.obj
 
 zbar/qrcode/bch15_5.i: zbar/qrcode/bch15_5.c.i
@@ -1109,7 +1161,7 @@ zbar/qrcode/bch15_5.i: zbar/qrcode/bch15_5.c.i
 
 # target to preprocess a source file
 zbar/qrcode/bch15_5.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/bch15_5.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/bch15_5.c.i
 .PHONY : zbar/qrcode/bch15_5.c.i
 
 zbar/qrcode/bch15_5.s: zbar/qrcode/bch15_5.c.s
@@ -1118,7 +1170,7 @@ zbar/qrcode/bch15_5.s: zbar/qrcode/bch15_5.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/bch15_5.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/bch15_5.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/bch15_5.c.s
 .PHONY : zbar/qrcode/bch15_5.c.s
 
 zbar/qrcode/binarize.obj: zbar/qrcode/binarize.c.obj
@@ -1127,7 +1179,7 @@ zbar/qrcode/binarize.obj: zbar/qrcode/binarize.c.obj
 
 # target to build an object file
 zbar/qrcode/binarize.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/binarize.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/binarize.c.obj
 .PHONY : zbar/qrcode/binarize.c.obj
 
 zbar/qrcode/binarize.i: zbar/qrcode/binarize.c.i
@@ -1136,7 +1188,7 @@ zbar/qrcode/binarize.i: zbar/qrcode/binarize.c.i
 
 # target to preprocess a source file
 zbar/qrcode/binarize.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/binarize.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/binarize.c.i
 .PHONY : zbar/qrcode/binarize.c.i
 
 zbar/qrcode/binarize.s: zbar/qrcode/binarize.c.s
@@ -1145,7 +1197,7 @@ zbar/qrcode/binarize.s: zbar/qrcode/binarize.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/binarize.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/binarize.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/binarize.c.s
 .PHONY : zbar/qrcode/binarize.c.s
 
 zbar/qrcode/isaac.obj: zbar/qrcode/isaac.c.obj
@@ -1154,7 +1206,7 @@ zbar/qrcode/isaac.obj: zbar/qrcode/isaac.c.obj
 
 # target to build an object file
 zbar/qrcode/isaac.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/isaac.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/isaac.c.obj
 .PHONY : zbar/qrcode/isaac.c.obj
 
 zbar/qrcode/isaac.i: zbar/qrcode/isaac.c.i
@@ -1163,7 +1215,7 @@ zbar/qrcode/isaac.i: zbar/qrcode/isaac.c.i
 
 # target to preprocess a source file
 zbar/qrcode/isaac.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/isaac.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/isaac.c.i
 .PHONY : zbar/qrcode/isaac.c.i
 
 zbar/qrcode/isaac.s: zbar/qrcode/isaac.c.s
@@ -1172,7 +1224,7 @@ zbar/qrcode/isaac.s: zbar/qrcode/isaac.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/isaac.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/isaac.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/isaac.c.s
 .PHONY : zbar/qrcode/isaac.c.s
 
 zbar/qrcode/qrdec.obj: zbar/qrcode/qrdec.c.obj
@@ -1181,7 +1233,7 @@ zbar/qrcode/qrdec.obj: zbar/qrcode/qrdec.c.obj
 
 # target to build an object file
 zbar/qrcode/qrdec.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/qrdec.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/qrdec.c.obj
 .PHONY : zbar/qrcode/qrdec.c.obj
 
 zbar/qrcode/qrdec.i: zbar/qrcode/qrdec.c.i
@@ -1190,7 +1242,7 @@ zbar/qrcode/qrdec.i: zbar/qrcode/qrdec.c.i
 
 # target to preprocess a source file
 zbar/qrcode/qrdec.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/qrdec.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/qrdec.c.i
 .PHONY : zbar/qrcode/qrdec.c.i
 
 zbar/qrcode/qrdec.s: zbar/qrcode/qrdec.c.s
@@ -1199,7 +1251,7 @@ zbar/qrcode/qrdec.s: zbar/qrcode/qrdec.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/qrdec.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/qrdec.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/qrdec.c.s
 .PHONY : zbar/qrcode/qrdec.c.s
 
 zbar/qrcode/qrdectxt.obj: zbar/qrcode/qrdectxt.c.obj
@@ -1208,7 +1260,7 @@ zbar/qrcode/qrdectxt.obj: zbar/qrcode/qrdectxt.c.obj
 
 # target to build an object file
 zbar/qrcode/qrdectxt.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/qrdectxt.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/qrdectxt.c.obj
 .PHONY : zbar/qrcode/qrdectxt.c.obj
 
 zbar/qrcode/qrdectxt.i: zbar/qrcode/qrdectxt.c.i
@@ -1217,7 +1269,7 @@ zbar/qrcode/qrdectxt.i: zbar/qrcode/qrdectxt.c.i
 
 # target to preprocess a source file
 zbar/qrcode/qrdectxt.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/qrdectxt.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/qrdectxt.c.i
 .PHONY : zbar/qrcode/qrdectxt.c.i
 
 zbar/qrcode/qrdectxt.s: zbar/qrcode/qrdectxt.c.s
@@ -1226,7 +1278,7 @@ zbar/qrcode/qrdectxt.s: zbar/qrcode/qrdectxt.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/qrdectxt.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/qrdectxt.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/qrdectxt.c.s
 .PHONY : zbar/qrcode/qrdectxt.c.s
 
 zbar/qrcode/rs.obj: zbar/qrcode/rs.c.obj
@@ -1235,7 +1287,7 @@ zbar/qrcode/rs.obj: zbar/qrcode/rs.c.obj
 
 # target to build an object file
 zbar/qrcode/rs.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/rs.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/rs.c.obj
 .PHONY : zbar/qrcode/rs.c.obj
 
 zbar/qrcode/rs.i: zbar/qrcode/rs.c.i
@@ -1244,7 +1296,7 @@ zbar/qrcode/rs.i: zbar/qrcode/rs.c.i
 
 # target to preprocess a source file
 zbar/qrcode/rs.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/rs.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/rs.c.i
 .PHONY : zbar/qrcode/rs.c.i
 
 zbar/qrcode/rs.s: zbar/qrcode/rs.c.s
@@ -1253,7 +1305,7 @@ zbar/qrcode/rs.s: zbar/qrcode/rs.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/rs.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/rs.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/rs.c.s
 .PHONY : zbar/qrcode/rs.c.s
 
 zbar/qrcode/util.obj: zbar/qrcode/util.c.obj
@@ -1262,7 +1314,7 @@ zbar/qrcode/util.obj: zbar/qrcode/util.c.obj
 
 # target to build an object file
 zbar/qrcode/util.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/util.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/util.c.obj
 .PHONY : zbar/qrcode/util.c.obj
 
 zbar/qrcode/util.i: zbar/qrcode/util.c.i
@@ -1271,7 +1323,7 @@ zbar/qrcode/util.i: zbar/qrcode/util.c.i
 
 # target to preprocess a source file
 zbar/qrcode/util.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/util.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/util.c.i
 .PHONY : zbar/qrcode/util.c.i
 
 zbar/qrcode/util.s: zbar/qrcode/util.c.s
@@ -1280,7 +1332,7 @@ zbar/qrcode/util.s: zbar/qrcode/util.c.s
 
 # target to generate assembly for a file
 zbar/qrcode/util.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/qrcode/util.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/qrcode/util.c.s
 .PHONY : zbar/qrcode/util.c.s
 
 zbar/refcnt.obj: zbar/refcnt.c.obj
@@ -1289,7 +1341,7 @@ zbar/refcnt.obj: zbar/refcnt.c.obj
 
 # target to build an object file
 zbar/refcnt.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/refcnt.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/refcnt.c.obj
 .PHONY : zbar/refcnt.c.obj
 
 zbar/refcnt.i: zbar/refcnt.c.i
@@ -1298,7 +1350,7 @@ zbar/refcnt.i: zbar/refcnt.c.i
 
 # target to preprocess a source file
 zbar/refcnt.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/refcnt.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/refcnt.c.i
 .PHONY : zbar/refcnt.c.i
 
 zbar/refcnt.s: zbar/refcnt.c.s
@@ -1307,7 +1359,7 @@ zbar/refcnt.s: zbar/refcnt.c.s
 
 # target to generate assembly for a file
 zbar/refcnt.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/refcnt.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/refcnt.c.s
 .PHONY : zbar/refcnt.c.s
 
 zbar/scanner.obj: zbar/scanner.c.obj
@@ -1316,7 +1368,7 @@ zbar/scanner.obj: zbar/scanner.c.obj
 
 # target to build an object file
 zbar/scanner.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/scanner.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/scanner.c.obj
 .PHONY : zbar/scanner.c.obj
 
 zbar/scanner.i: zbar/scanner.c.i
@@ -1325,7 +1377,7 @@ zbar/scanner.i: zbar/scanner.c.i
 
 # target to preprocess a source file
 zbar/scanner.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/scanner.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/scanner.c.i
 .PHONY : zbar/scanner.c.i
 
 zbar/scanner.s: zbar/scanner.c.s
@@ -1334,7 +1386,7 @@ zbar/scanner.s: zbar/scanner.c.s
 
 # target to generate assembly for a file
 zbar/scanner.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/scanner.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/scanner.c.s
 .PHONY : zbar/scanner.c.s
 
 zbar/symbol.obj: zbar/symbol.c.obj
@@ -1343,7 +1395,7 @@ zbar/symbol.obj: zbar/symbol.c.obj
 
 # target to build an object file
 zbar/symbol.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/symbol.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/symbol.c.obj
 .PHONY : zbar/symbol.c.obj
 
 zbar/symbol.i: zbar/symbol.c.i
@@ -1352,7 +1404,7 @@ zbar/symbol.i: zbar/symbol.c.i
 
 # target to preprocess a source file
 zbar/symbol.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/symbol.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/symbol.c.i
 .PHONY : zbar/symbol.c.i
 
 zbar/symbol.s: zbar/symbol.c.s
@@ -1361,7 +1413,7 @@ zbar/symbol.s: zbar/symbol.c.s
 
 # target to generate assembly for a file
 zbar/symbol.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/symbol.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/symbol.c.s
 .PHONY : zbar/symbol.c.s
 
 zbar/video.obj: zbar/video.c.obj
@@ -1370,7 +1422,7 @@ zbar/video.obj: zbar/video.c.obj
 
 # target to build an object file
 zbar/video.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/video.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/video.c.obj
 .PHONY : zbar/video.c.obj
 
 zbar/video.i: zbar/video.c.i
@@ -1379,7 +1431,7 @@ zbar/video.i: zbar/video.c.i
 
 # target to preprocess a source file
 zbar/video.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/video.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/video.c.i
 .PHONY : zbar/video.c.i
 
 zbar/video.s: zbar/video.c.s
@@ -1388,7 +1440,7 @@ zbar/video.s: zbar/video.c.s
 
 # target to generate assembly for a file
 zbar/video.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/video.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/video.c.s
 .PHONY : zbar/video.c.s
 
 zbar/video/null.obj: zbar/video/null.c.obj
@@ -1397,7 +1449,7 @@ zbar/video/null.obj: zbar/video/null.c.obj
 
 # target to build an object file
 zbar/video/null.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/video/null.c.obj
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/video/null.c.obj
 .PHONY : zbar/video/null.c.obj
 
 zbar/video/null.i: zbar/video/null.c.i
@@ -1406,7 +1458,7 @@ zbar/video/null.i: zbar/video/null.c.i
 
 # target to preprocess a source file
 zbar/video/null.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/video/null.c.i
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/video/null.c.i
 .PHONY : zbar/video/null.c.i
 
 zbar/video/null.s: zbar/video/null.c.s
@@ -1415,7 +1467,7 @@ zbar/video/null.s: zbar/video/null.c.s
 
 # target to generate assembly for a file
 zbar/video/null.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zbar/video/null.c.s
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/zbar/video/null.c.s
 .PHONY : zbar/video/null.c.s
 
 zlib/adler32.obj: zlib/adler32.c.obj
@@ -1424,7 +1476,7 @@ zlib/adler32.obj: zlib/adler32.c.obj
 
 # target to build an object file
 zlib/adler32.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/adler32.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/adler32.c.obj
 .PHONY : zlib/adler32.c.obj
 
 zlib/adler32.i: zlib/adler32.c.i
@@ -1433,7 +1485,7 @@ zlib/adler32.i: zlib/adler32.c.i
 
 # target to preprocess a source file
 zlib/adler32.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/adler32.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/adler32.c.i
 .PHONY : zlib/adler32.c.i
 
 zlib/adler32.s: zlib/adler32.c.s
@@ -1442,7 +1494,7 @@ zlib/adler32.s: zlib/adler32.c.s
 
 # target to generate assembly for a file
 zlib/adler32.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/adler32.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/adler32.c.s
 .PHONY : zlib/adler32.c.s
 
 zlib/compress.obj: zlib/compress.c.obj
@@ -1451,7 +1503,7 @@ zlib/compress.obj: zlib/compress.c.obj
 
 # target to build an object file
 zlib/compress.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/compress.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/compress.c.obj
 .PHONY : zlib/compress.c.obj
 
 zlib/compress.i: zlib/compress.c.i
@@ -1460,7 +1512,7 @@ zlib/compress.i: zlib/compress.c.i
 
 # target to preprocess a source file
 zlib/compress.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/compress.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/compress.c.i
 .PHONY : zlib/compress.c.i
 
 zlib/compress.s: zlib/compress.c.s
@@ -1469,7 +1521,7 @@ zlib/compress.s: zlib/compress.c.s
 
 # target to generate assembly for a file
 zlib/compress.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/compress.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/compress.c.s
 .PHONY : zlib/compress.c.s
 
 zlib/crc32.obj: zlib/crc32.c.obj
@@ -1478,7 +1530,7 @@ zlib/crc32.obj: zlib/crc32.c.obj
 
 # target to build an object file
 zlib/crc32.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/crc32.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/crc32.c.obj
 .PHONY : zlib/crc32.c.obj
 
 zlib/crc32.i: zlib/crc32.c.i
@@ -1487,7 +1539,7 @@ zlib/crc32.i: zlib/crc32.c.i
 
 # target to preprocess a source file
 zlib/crc32.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/crc32.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/crc32.c.i
 .PHONY : zlib/crc32.c.i
 
 zlib/crc32.s: zlib/crc32.c.s
@@ -1496,7 +1548,7 @@ zlib/crc32.s: zlib/crc32.c.s
 
 # target to generate assembly for a file
 zlib/crc32.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/crc32.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/crc32.c.s
 .PHONY : zlib/crc32.c.s
 
 zlib/deflate.obj: zlib/deflate.c.obj
@@ -1505,7 +1557,7 @@ zlib/deflate.obj: zlib/deflate.c.obj
 
 # target to build an object file
 zlib/deflate.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/deflate.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/deflate.c.obj
 .PHONY : zlib/deflate.c.obj
 
 zlib/deflate.i: zlib/deflate.c.i
@@ -1514,7 +1566,7 @@ zlib/deflate.i: zlib/deflate.c.i
 
 # target to preprocess a source file
 zlib/deflate.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/deflate.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/deflate.c.i
 .PHONY : zlib/deflate.c.i
 
 zlib/deflate.s: zlib/deflate.c.s
@@ -1523,7 +1575,7 @@ zlib/deflate.s: zlib/deflate.c.s
 
 # target to generate assembly for a file
 zlib/deflate.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/deflate.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/deflate.c.s
 .PHONY : zlib/deflate.c.s
 
 zlib/gzclose.obj: zlib/gzclose.c.obj
@@ -1532,7 +1584,7 @@ zlib/gzclose.obj: zlib/gzclose.c.obj
 
 # target to build an object file
 zlib/gzclose.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzclose.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzclose.c.obj
 .PHONY : zlib/gzclose.c.obj
 
 zlib/gzclose.i: zlib/gzclose.c.i
@@ -1541,7 +1593,7 @@ zlib/gzclose.i: zlib/gzclose.c.i
 
 # target to preprocess a source file
 zlib/gzclose.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzclose.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzclose.c.i
 .PHONY : zlib/gzclose.c.i
 
 zlib/gzclose.s: zlib/gzclose.c.s
@@ -1550,7 +1602,7 @@ zlib/gzclose.s: zlib/gzclose.c.s
 
 # target to generate assembly for a file
 zlib/gzclose.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzclose.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzclose.c.s
 .PHONY : zlib/gzclose.c.s
 
 zlib/gzlib.obj: zlib/gzlib.c.obj
@@ -1559,7 +1611,7 @@ zlib/gzlib.obj: zlib/gzlib.c.obj
 
 # target to build an object file
 zlib/gzlib.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzlib.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzlib.c.obj
 .PHONY : zlib/gzlib.c.obj
 
 zlib/gzlib.i: zlib/gzlib.c.i
@@ -1568,7 +1620,7 @@ zlib/gzlib.i: zlib/gzlib.c.i
 
 # target to preprocess a source file
 zlib/gzlib.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzlib.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzlib.c.i
 .PHONY : zlib/gzlib.c.i
 
 zlib/gzlib.s: zlib/gzlib.c.s
@@ -1577,7 +1629,7 @@ zlib/gzlib.s: zlib/gzlib.c.s
 
 # target to generate assembly for a file
 zlib/gzlib.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzlib.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzlib.c.s
 .PHONY : zlib/gzlib.c.s
 
 zlib/gzread.obj: zlib/gzread.c.obj
@@ -1586,7 +1638,7 @@ zlib/gzread.obj: zlib/gzread.c.obj
 
 # target to build an object file
 zlib/gzread.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzread.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzread.c.obj
 .PHONY : zlib/gzread.c.obj
 
 zlib/gzread.i: zlib/gzread.c.i
@@ -1595,7 +1647,7 @@ zlib/gzread.i: zlib/gzread.c.i
 
 # target to preprocess a source file
 zlib/gzread.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzread.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzread.c.i
 .PHONY : zlib/gzread.c.i
 
 zlib/gzread.s: zlib/gzread.c.s
@@ -1604,7 +1656,7 @@ zlib/gzread.s: zlib/gzread.c.s
 
 # target to generate assembly for a file
 zlib/gzread.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzread.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzread.c.s
 .PHONY : zlib/gzread.c.s
 
 zlib/gzwrite.obj: zlib/gzwrite.c.obj
@@ -1613,7 +1665,7 @@ zlib/gzwrite.obj: zlib/gzwrite.c.obj
 
 # target to build an object file
 zlib/gzwrite.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzwrite.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzwrite.c.obj
 .PHONY : zlib/gzwrite.c.obj
 
 zlib/gzwrite.i: zlib/gzwrite.c.i
@@ -1622,7 +1674,7 @@ zlib/gzwrite.i: zlib/gzwrite.c.i
 
 # target to preprocess a source file
 zlib/gzwrite.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzwrite.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzwrite.c.i
 .PHONY : zlib/gzwrite.c.i
 
 zlib/gzwrite.s: zlib/gzwrite.c.s
@@ -1631,7 +1683,7 @@ zlib/gzwrite.s: zlib/gzwrite.c.s
 
 # target to generate assembly for a file
 zlib/gzwrite.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/gzwrite.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/gzwrite.c.s
 .PHONY : zlib/gzwrite.c.s
 
 zlib/infback.obj: zlib/infback.c.obj
@@ -1640,7 +1692,7 @@ zlib/infback.obj: zlib/infback.c.obj
 
 # target to build an object file
 zlib/infback.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/infback.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/infback.c.obj
 .PHONY : zlib/infback.c.obj
 
 zlib/infback.i: zlib/infback.c.i
@@ -1649,7 +1701,7 @@ zlib/infback.i: zlib/infback.c.i
 
 # target to preprocess a source file
 zlib/infback.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/infback.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/infback.c.i
 .PHONY : zlib/infback.c.i
 
 zlib/infback.s: zlib/infback.c.s
@@ -1658,7 +1710,7 @@ zlib/infback.s: zlib/infback.c.s
 
 # target to generate assembly for a file
 zlib/infback.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/infback.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/infback.c.s
 .PHONY : zlib/infback.c.s
 
 zlib/inffast.obj: zlib/inffast.c.obj
@@ -1667,7 +1719,7 @@ zlib/inffast.obj: zlib/inffast.c.obj
 
 # target to build an object file
 zlib/inffast.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inffast.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inffast.c.obj
 .PHONY : zlib/inffast.c.obj
 
 zlib/inffast.i: zlib/inffast.c.i
@@ -1676,7 +1728,7 @@ zlib/inffast.i: zlib/inffast.c.i
 
 # target to preprocess a source file
 zlib/inffast.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inffast.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inffast.c.i
 .PHONY : zlib/inffast.c.i
 
 zlib/inffast.s: zlib/inffast.c.s
@@ -1685,7 +1737,7 @@ zlib/inffast.s: zlib/inffast.c.s
 
 # target to generate assembly for a file
 zlib/inffast.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inffast.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inffast.c.s
 .PHONY : zlib/inffast.c.s
 
 zlib/inflate.obj: zlib/inflate.c.obj
@@ -1694,7 +1746,7 @@ zlib/inflate.obj: zlib/inflate.c.obj
 
 # target to build an object file
 zlib/inflate.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inflate.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inflate.c.obj
 .PHONY : zlib/inflate.c.obj
 
 zlib/inflate.i: zlib/inflate.c.i
@@ -1703,7 +1755,7 @@ zlib/inflate.i: zlib/inflate.c.i
 
 # target to preprocess a source file
 zlib/inflate.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inflate.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inflate.c.i
 .PHONY : zlib/inflate.c.i
 
 zlib/inflate.s: zlib/inflate.c.s
@@ -1712,7 +1764,7 @@ zlib/inflate.s: zlib/inflate.c.s
 
 # target to generate assembly for a file
 zlib/inflate.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inflate.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inflate.c.s
 .PHONY : zlib/inflate.c.s
 
 zlib/inftrees.obj: zlib/inftrees.c.obj
@@ -1721,7 +1773,7 @@ zlib/inftrees.obj: zlib/inftrees.c.obj
 
 # target to build an object file
 zlib/inftrees.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inftrees.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inftrees.c.obj
 .PHONY : zlib/inftrees.c.obj
 
 zlib/inftrees.i: zlib/inftrees.c.i
@@ -1730,7 +1782,7 @@ zlib/inftrees.i: zlib/inftrees.c.i
 
 # target to preprocess a source file
 zlib/inftrees.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inftrees.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inftrees.c.i
 .PHONY : zlib/inftrees.c.i
 
 zlib/inftrees.s: zlib/inftrees.c.s
@@ -1739,7 +1791,7 @@ zlib/inftrees.s: zlib/inftrees.c.s
 
 # target to generate assembly for a file
 zlib/inftrees.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/inftrees.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/inftrees.c.s
 .PHONY : zlib/inftrees.c.s
 
 zlib/trees.obj: zlib/trees.c.obj
@@ -1748,7 +1800,7 @@ zlib/trees.obj: zlib/trees.c.obj
 
 # target to build an object file
 zlib/trees.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/trees.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/trees.c.obj
 .PHONY : zlib/trees.c.obj
 
 zlib/trees.i: zlib/trees.c.i
@@ -1757,7 +1809,7 @@ zlib/trees.i: zlib/trees.c.i
 
 # target to preprocess a source file
 zlib/trees.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/trees.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/trees.c.i
 .PHONY : zlib/trees.c.i
 
 zlib/trees.s: zlib/trees.c.s
@@ -1766,7 +1818,7 @@ zlib/trees.s: zlib/trees.c.s
 
 # target to generate assembly for a file
 zlib/trees.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/trees.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/trees.c.s
 .PHONY : zlib/trees.c.s
 
 zlib/uncompr.obj: zlib/uncompr.c.obj
@@ -1775,7 +1827,7 @@ zlib/uncompr.obj: zlib/uncompr.c.obj
 
 # target to build an object file
 zlib/uncompr.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/uncompr.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/uncompr.c.obj
 .PHONY : zlib/uncompr.c.obj
 
 zlib/uncompr.i: zlib/uncompr.c.i
@@ -1784,7 +1836,7 @@ zlib/uncompr.i: zlib/uncompr.c.i
 
 # target to preprocess a source file
 zlib/uncompr.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/uncompr.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/uncompr.c.i
 .PHONY : zlib/uncompr.c.i
 
 zlib/uncompr.s: zlib/uncompr.c.s
@@ -1793,7 +1845,7 @@ zlib/uncompr.s: zlib/uncompr.c.s
 
 # target to generate assembly for a file
 zlib/uncompr.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/uncompr.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/uncompr.c.s
 .PHONY : zlib/uncompr.c.s
 
 zlib/zutil.obj: zlib/zutil.c.obj
@@ -1802,7 +1854,7 @@ zlib/zutil.obj: zlib/zutil.c.obj
 
 # target to build an object file
 zlib/zutil.c.obj:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/zutil.c.obj
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/zutil.c.obj
 .PHONY : zlib/zutil.c.obj
 
 zlib/zutil.i: zlib/zutil.c.i
@@ -1811,7 +1863,7 @@ zlib/zutil.i: zlib/zutil.c.i
 
 # target to preprocess a source file
 zlib/zutil.c.i:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/zutil.c.i
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/zutil.c.i
 .PHONY : zlib/zutil.c.i
 
 zlib/zutil.s: zlib/zutil.c.s
@@ -1820,7 +1872,7 @@ zlib/zutil.s: zlib/zutil.c.s
 
 # target to generate assembly for a file
 zlib/zutil.c.s:
-	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/zlib/zutil.c.s
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/zlib/zutil.c.s
 .PHONY : zlib/zutil.c.s
 
 # Help Target
@@ -1829,6 +1881,10 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... ZLIB
+	@echo ... LIBPNG
+	@echo ... LIBICONV
+	@echo ... ZBAR
 	@echo ... Zbar_cmake
 	@echo ... edit_cache
 	@echo ... rebuild_cache

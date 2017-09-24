@@ -8,372 +8,596 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ZLIB">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libZLIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 ZLIB"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ZLIB/fast">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libZLIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 ZLIB/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LIBPNG">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libLIBPNG.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIBPNG"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LIBPNG/fast">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libLIBPNG.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIBPNG/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LIBICONV">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libLIBICONV.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIBICONV"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LIBICONV/fast">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libLIBICONV.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIBICONV/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ZBAR">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libZBAR.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 ZBAR"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ZBAR/fast">
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/libZBAR.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 ZBAR/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Zbar_cmake">
-				<Option output="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Zbar_cmake.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Zbar_cmake.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zbar_cmake"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zbar_cmake"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Zbar_cmake/fast">
-				<Option output="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Zbar_cmake.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option output="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Zbar_cmake.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
-					<Add directory="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/include"/>
+					<Add directory="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zbar_cmake/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zbar_cmake/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
+				<Option working_dir="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/lib/iconv.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/lib/iconv.c">
+			<Option target="LIBICONV"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/lib/relocatable.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/lib/relocatable.c">
+			<Option target="LIBICONV"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/lib/relocatable.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/lib/relocatable.h">
+			<Option target="LIBICONV"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/lib/localcharset.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libiconv-1.15/libcharset/lib/localcharset.c">
+			<Option target="LIBICONV"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/png.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/png.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/png.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/png.h">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngerror.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngerror.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pnggccrd.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pnggccrd.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngget.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngget.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngmem.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngmem.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngpread.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngpread.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngread.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngread.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngrio.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngrio.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngrtran.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngrtran.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngrutil.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngrutil.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngset.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngset.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngtest.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngtest.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngtrans.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngtrans.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngvcrd.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngvcrd.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwio.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwio.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwrite.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwrite.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwtran.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwtran.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwutil.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/libpng/pngwutil.c">
+			<Option target="LIBPNG"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/scan_image.c">
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/scan_image.c">
 			<Option target="Zbar_cmake"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/config.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/config.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/convert.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/convert.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/codabar.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/codabar.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/codabar.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/codabar.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code128.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code128.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code128.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code128.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code39.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code39.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code39.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code39.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code93.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code93.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code93.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/code93.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/databar.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/databar.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/databar.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/databar.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/ean.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/ean.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/ean.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/ean.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/i25.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/i25.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/i25.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/i25.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/qr_finder.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/qr_finder.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/qr_finder.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/decoder/qr_finder.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/error.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/error.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/error.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/error.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/image.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/image.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/image.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/image.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/img_scanner.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/img_scanner.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/img_scanner.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/img_scanner.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/bch15_5.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/bch15_5.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/bch15_5.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/bch15_5.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/binarize.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/binarize.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/binarize.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/binarize.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/isaac.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/isaac.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/isaac.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/isaac.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/qrdec.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/qrdec.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/qrdec.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/qrdec.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/qrdectxt.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/qrdectxt.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/rs.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/rs.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/rs.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/rs.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/util.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/util.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/util.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/qrcode/util.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/refcnt.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/refcnt.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/refcnt.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/refcnt.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/scanner.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/scanner.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/symbol.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/symbol.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/symbol.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/symbol.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/video.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/video.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/video.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/video.h">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/video/null.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zbar/video/null.c">
+			<Option target="ZBAR"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/adler32.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/adler32.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/compress.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/compress.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/crc32.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/crc32.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/crc32.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/crc32.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/deflate.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/deflate.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/deflate.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/deflate.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzclose.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzclose.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzlib.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzlib.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzread.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzread.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzwrite.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/gzwrite.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/infback.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/infback.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inffast.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inffast.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inffast.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inffast.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inflate.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inflate.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inflate.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inflate.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inftrees.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inftrees.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inftrees.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/inftrees.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/trees.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/trees.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/trees.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/trees.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/uncompr.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/uncompr.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/zutil.c">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/zutil.c">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/zutil.h">
-			<Option target="Zbar_cmake"/>
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/zlib/zutil.h">
+			<Option target="ZLIB"/>
 		</Unit>
-		<Unit filename="D:/MyWork/ggh/mycode/cpp_tutorials/05.qrcode/Zbar_cmake/CMakeLists.txt">
+		<Unit filename="E:/code/cpp_tutorials/05.qrcode/Zbar_cmake/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

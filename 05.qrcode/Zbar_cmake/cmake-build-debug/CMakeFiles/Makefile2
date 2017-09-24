@@ -44,28 +44,182 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe
+CMAKE_COMMAND = E:\DevelopTool\CLion-2017.2.1\bin\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\CLion-2017.2.1\bin\cmake\bin\cmake.exe -E remove -f
+RM = E:\DevelopTool\CLion-2017.2.1\bin\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake
+CMAKE_SOURCE_DIR = E:\code\cpp_tutorials\05.qrcode\Zbar_cmake
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug
+CMAKE_BINARY_DIR = E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug
+
+#=============================================================================
+# Target rules for target CMakeFiles/ZLIB.dir
+
+# All Build rule for target.
+CMakeFiles/ZLIB.dir/all:
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/depend
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target ZLIB"
+.PHONY : CMakeFiles/ZLIB.dir/all
+
+# Include target in all.
+all: CMakeFiles/ZLIB.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ZLIB.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 16
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ZLIB.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/ZLIB.dir/rule
+
+# Convenience name for target.
+ZLIB: CMakeFiles/ZLIB.dir/rule
+
+.PHONY : ZLIB
+
+# clean rule for target.
+CMakeFiles/ZLIB.dir/clean:
+	$(MAKE) -f CMakeFiles\ZLIB.dir\build.make CMakeFiles/ZLIB.dir/clean
+.PHONY : CMakeFiles/ZLIB.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ZLIB.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LIBPNG.dir
+
+# All Build rule for target.
+CMakeFiles/LIBPNG.dir/all: CMakeFiles/ZLIB.dir/all
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/depend
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target LIBPNG"
+.PHONY : CMakeFiles/LIBPNG.dir/all
+
+# Include target in all.
+all: CMakeFiles/LIBPNG.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LIBPNG.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 35
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LIBPNG.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/LIBPNG.dir/rule
+
+# Convenience name for target.
+LIBPNG: CMakeFiles/LIBPNG.dir/rule
+
+.PHONY : LIBPNG
+
+# clean rule for target.
+CMakeFiles/LIBPNG.dir/clean:
+	$(MAKE) -f CMakeFiles\LIBPNG.dir\build.make CMakeFiles/LIBPNG.dir/clean
+.PHONY : CMakeFiles/LIBPNG.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LIBPNG.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LIBICONV.dir
+
+# All Build rule for target.
+CMakeFiles/LIBICONV.dir/all: CMakeFiles/ZLIB.dir/all
+CMakeFiles/LIBICONV.dir/all: CMakeFiles/LIBPNG.dir/all
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/depend
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target LIBICONV"
+.PHONY : CMakeFiles/LIBICONV.dir/all
+
+# Include target in all.
+all: CMakeFiles/LIBICONV.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LIBICONV.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 39
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LIBICONV.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/LIBICONV.dir/rule
+
+# Convenience name for target.
+LIBICONV: CMakeFiles/LIBICONV.dir/rule
+
+.PHONY : LIBICONV
+
+# clean rule for target.
+CMakeFiles/LIBICONV.dir/clean:
+	$(MAKE) -f CMakeFiles\LIBICONV.dir\build.make CMakeFiles/LIBICONV.dir/clean
+.PHONY : CMakeFiles/LIBICONV.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LIBICONV.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ZBAR.dir
+
+# All Build rule for target.
+CMakeFiles/ZBAR.dir/all: CMakeFiles/ZLIB.dir/all
+CMakeFiles/ZBAR.dir/all: CMakeFiles/LIBPNG.dir/all
+CMakeFiles/ZBAR.dir/all: CMakeFiles/LIBICONV.dir/all
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/depend
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target ZBAR"
+.PHONY : CMakeFiles/ZBAR.dir/all
+
+# Include target in all.
+all: CMakeFiles/ZBAR.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ZBAR.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 66
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ZBAR.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/ZBAR.dir/rule
+
+# Convenience name for target.
+ZBAR: CMakeFiles/ZBAR.dir/rule
+
+.PHONY : ZBAR
+
+# clean rule for target.
+CMakeFiles/ZBAR.dir/clean:
+	$(MAKE) -f CMakeFiles\ZBAR.dir\build.make CMakeFiles/ZBAR.dir/clean
+.PHONY : CMakeFiles/ZBAR.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ZBAR.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Zbar_cmake.dir
 
 # All Build rule for target.
-CMakeFiles/Zbar_cmake.dir/all:
+CMakeFiles/Zbar_cmake.dir/all: CMakeFiles/ZLIB.dir/all
+CMakeFiles/Zbar_cmake.dir/all: CMakeFiles/LIBPNG.dir/all
+CMakeFiles/Zbar_cmake.dir/all: CMakeFiles/LIBICONV.dir/all
+CMakeFiles/Zbar_cmake.dir/all: CMakeFiles/ZBAR.dir/all
 	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/depend
 	$(MAKE) -f CMakeFiles\Zbar_cmake.dir\build.make CMakeFiles/Zbar_cmake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64 "Built target Zbar_cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles --progress-num=67,68 "Built target Zbar_cmake"
 .PHONY : CMakeFiles/Zbar_cmake.dir/all
 
 # Include target in all.
@@ -75,9 +229,9 @@ all: CMakeFiles/Zbar_cmake.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Zbar_cmake.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 68
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Zbar_cmake.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyWork\ggh\mycode\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\code\cpp_tutorials\05.qrcode\Zbar_cmake\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Zbar_cmake.dir/rule
 
 # Convenience name for target.
