@@ -4,6 +4,10 @@
 # Sets the minimum version of CMake required to build the native library.
 
 cmake_minimum_required(VERSION 3.4.1)
+configure_file (
+  "src/main/cpp/libiconv-1.15/include/iconv.h.in"
+  "src/main/cpp/libiconv-1.15/libcharset/include/localcharset.h.in"
+  )
 
 set(LIBICONV_INCLUDE
         src/main/cpp/libiconv-1.15/include
