@@ -16,11 +16,11 @@ set(PNG_INCLUDE
 include_directories(${LIBICONV_INCLUDE} ${LIBICONV_INCLUDE} ${PNG_INCLUDE} include ${ZLIB_INCLUDE})
 
 
-set(LIBICONV libiconv-1.15/lib/iconv.c
+set(LIBICONV_SRC libiconv-1.15/lib/iconv.c
         libiconv-1.15/libcharset/lib/localcharset.c
         libiconv-1.15/lib/relocatable.c)
 
-set(ZBAR zbar/img_scanner.c
+set(ZBAR_SRC zbar/img_scanner.c
         zbar/decoder.c
         zbar/image.c
         zbar/symbol.c
@@ -47,7 +47,7 @@ set(ZBAR zbar/img_scanner.c
         zbar/qrcode/rs.c
         zbar/qrcode/util.c)
 
-set(LIBPNG libpng/pngget.c
+set(LIBPNG_SRC libpng/pngget.c
         libpng/pngread.c
         libpng/pngrutil.c
         libpng/pngtrans.c
@@ -84,5 +84,16 @@ set(ZLIB_SRCS
         zlib/zutil.c
         )
 
+add_library(ZLIB STATIC ${ZLIB_SRCS})
+link_libraries(ZLIB)
+add_library(LIBPNG STATIC ${LIBPNG_SRC})
+link_libraries(LIBPNG)
+add_library(LIBICONV STATIC ${LIBICONV_SRC})
+link_libraries(LIBICONV)
+add_library(ZBAR STATIC ${ZBAR_SRC})
+link_libraries(ZBAR)
 set(SRC scan_image.c)
-add_executable(Zbar_cmake ${LIBICONV} ${ZBAR} ${LIBPNG} ${SRC} ${ZLIB_SRCS})
+add_executable(Zbar_cmake ${SRC})
+#add_executable(Zbar_cmake ${LIBICONV} ${ZBAR} ${LIBPNG_SRC} ${SRC} ZLIB )
+#TARGET_LINK_LIBRARIES(winmm.lib)
+TARGET_LINK_LIBRARIES(Zbar_cmake WinMM.Lib)
