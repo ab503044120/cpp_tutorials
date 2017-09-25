@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libLIBICONV.a  CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/iconv.c.obj CMakeFiles/LIBICONV.dir/libiconv-1.15/libcharset/lib/localcharset.c.obj CMakeFiles/LIBICONV.dir/libiconv-1.15/lib/relocatable.c.obj
-C:\MinGW\bin\ranlib.exe libLIBICONV.a
