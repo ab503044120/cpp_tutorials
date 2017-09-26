@@ -27,6 +27,8 @@ import net.sourceforge.zbar.ImageScanner;
 import net.sourceforge.zbar.Symbol;
 import net.sourceforge.zbar.SymbolSet;
 
+import java.io.UnsupportedEncodingException;
+
 /* Import ZBar Class files */
 
 public class CameraTestActivity extends Activity
@@ -63,14 +65,18 @@ public class CameraTestActivity extends Activity
         preview.addView(mPreview);
 
         scanText = (TextView)findViewById(R.id.scanText);
-
         scanButton = (Button)findViewById(R.id.ScanButton);
 
         scanButton.setOnClickListener(new OnClickListener() {
                 public void onClick(View v) {
                     if (barcodeScanned) {
                         barcodeScanned = false;
-                        scanText.setText("Scanning...");
+                        try {
+                            scanText.setText(
+                                    new String(new String("你好").getBytes("ISO8859-1")));
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
                         mCamera.setPreviewCallback(previewCb);
                         mCamera.startPreview();
                         previewing = true;
