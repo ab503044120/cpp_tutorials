@@ -5,20 +5,25 @@
 
 cmake_minimum_required(VERSION 3.4.1)
 configure_file (
-  "src/main/cpp/libiconv-1.15/include/iconv.h.in"
-  "src/main/cpp/libiconv-1.15/libcharset/include/localcharset.h.in"
-  )
+        src/main/cpp/libiconv-1.15/include/iconv.h.in
+        src/main/cpp/libiconv-1.15/include/iconv.h
+)
+configure_file (
+        src/main/cpp/libiconv-1.15/libcharset/include/localcharset.h.in
+        src/main/cpp/libiconv-1.15/libcharset/include/localcharset.h
+)
 
 set(LIBICONV_INCLUDE
-        src/main/cpp/libiconv-1.15/include
-        src/main/cpp/libiconv-1.15/libcharset
-        src/main/cpp/libiconv-1.15/libcharset/include)
+        ${CMAKE_BINARY_DIR}/src/main/cpp/libiconv-1.15/include
+        ${CMAKE_BINARY_DIR}/src/main/cpp/libiconv-1.15/libcharset/include
+)
+
 set(ZBAR_INCLUDE
         src/main/cpp/zbar)
 include_directories(
-        ${LIBICONV_INCLUDE}
-        src/main/cpp/zbar.h
-        src/main/cpp/config.h)
+ #       ${LIBICONV_INCLUDE}
+        src/main/cpp/include
+)
 set(LIBICONV_SRC
         src/main/cpp/libiconv-1.15/lib/iconv.c
         src/main/cpp/libiconv-1.15/libcharset/lib/localcharset.c
@@ -57,9 +62,10 @@ add_library(ZBAR STATIC ${ZBAR_SRC})
 link_libraries(ZBAR)
 
 add_library(
-             native-lib
-             SHARED
-             src/main/cpp/native-lib.cpp )
+        zbarjni
+        SHARED
+        src/main/cpp/native-lib.cpp
+        src/main/cpp/zbarjni.c )
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
@@ -68,19 +74,21 @@ add_library(
 # completing its build.
 
 find_library( # Sets the name of the path variable.
-              log-lib
+        log-lib
 
-              # Specifies the name of the NDK library that
-              # you want CMake to locate.
-              log )
+        # Specifies the name of the NDK library that
+        # you want CMake to locate.
+        log )
 
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
-                       native-lib
+        zbarjni
 
-                       # Links the target library to the log library
-                       # included in the NDK.
-                       ${log-lib} )
+        # Links the target library to the log library
+        # included in the NDK.
+        ZBAR
+        LIBICONV
+        ${log-lib} )

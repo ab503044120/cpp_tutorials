@@ -1,6 +1,7 @@
 #include <jni.h>
-#include <string>
+#include <string.h>
+#include <zbar.h>
 
-extern "C"{
+extern "C" {
 
 }
