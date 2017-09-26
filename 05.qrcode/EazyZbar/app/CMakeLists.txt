@@ -17,12 +17,9 @@ set(LIBICONV_INCLUDE
         ${CMAKE_BINARY_DIR}/src/main/cpp/libiconv-1.15/include
         ${CMAKE_BINARY_DIR}/src/main/cpp/libiconv-1.15/libcharset/include
 )
-
-set(ZBAR_INCLUDE
-        src/main/cpp/zbar)
 include_directories(
- #       ${LIBICONV_INCLUDE}
         src/main/cpp/include
+        src/main/cpp/include/zbar
 )
 set(LIBICONV_SRC
         src/main/cpp/libiconv-1.15/lib/iconv.c
