@@ -74,7 +74,7 @@ public class CamParaUtil {
             // TODO Auto-generated method stub
             if (lhs.width == rhs.width) {
                 return 0;
-            } else if (lhs.width > rhs.width) {
+            } else if (lhs.width < rhs.width) {
                 return 1;
             } else {
                 return -1;

@@ -49,8 +49,8 @@ public class CameraView extends TextureView implements TextureView.SurfaceTextur
     @Override
     public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
         mSurface = null;
-        CameraInterface.getInstance().doStopCamera();
         mDecoderHander.release();
+        CameraInterface.getInstance().doStopCamera();
         return false;
     }
 
@@ -83,7 +83,12 @@ public class CameraView extends TextureView implements TextureView.SurfaceTextur
                 }
             }, 1000);
         } else {
-            CameraInterface.getInstance().resumePreview(this);
+            post(new Runnable() {
+                @Override
+                public void run() {
+                    CameraInterface.getInstance().resumePreview(CameraView.this);
+                }
+            });
         }
 
     }

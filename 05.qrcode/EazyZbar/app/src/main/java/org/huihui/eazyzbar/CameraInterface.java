@@ -135,6 +135,8 @@ public class CameraInterface {
 
     public void resumePreview(Camera.PreviewCallback previewCallback) {
         if (null != mCamera) {
+            //因为这里和doStopCamera可能不在一个线程执行,如果同时执行会报Camera is release的错误,所以这里trycatch
+            //同时注意最好resumePreview和 dostropCamera在同一个线程中执行
             try {
                 mCamera.setPreviewCallback(previewCallback);
                 mCamera.startPreview();
