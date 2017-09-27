@@ -15,6 +15,7 @@ import android.hardware.Camera.PreviewCallback;
 import android.hardware.Camera.Size;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -124,9 +125,9 @@ public class CameraTestActivity extends Activity
 
                 Image barcode = new Image(size.width, size.height, "Y800");
                 barcode.setData(data);
-
+                long time = System.currentTimeMillis();
                 int result = scanner.scanImage(barcode);
-                
+                Log.e("time:", System.currentTimeMillis()-time + "");
                 if (result != 0) {
                     previewing = false;
                     mCamera.setPreviewCallback(null);
