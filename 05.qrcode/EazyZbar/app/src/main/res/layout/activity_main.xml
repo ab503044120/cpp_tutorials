@@ -4,11 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fl"
     tools:context="org.huihui.eazyzbar.MainActivity">
-    <org.huihui.eazyzbar.CameraView
+
+    <org.huihui.eazyzbar.CameraSurfaceView
+        android:id="@+id/cv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    <org.huihui.eazyzbar.ScanView
+
+    <org.huihui.eazyzbar.ScanLayout
+        android:id="@+id/sl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </FrameLayout>

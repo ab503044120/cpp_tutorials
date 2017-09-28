@@ -46,9 +46,7 @@ public class DecoderHander {
             Image barcode = new Image(width, height, "Y800");
             barcode.setData(data);
             barcode.setCrop(width / 2 - height / 4, height / 4, height / 2, height / 2);
-            long l = System.currentTimeMillis();
             int result = scanner.scanImage(barcode);
-            Log.e("Time", System.currentTimeMillis() - l + "");
             if (result != 0) {
                 CameraInterface.getInstance().stopPreview();
                 SymbolSet syms = scanner.getResults();

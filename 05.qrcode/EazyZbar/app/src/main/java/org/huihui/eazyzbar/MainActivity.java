@@ -9,9 +9,15 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class MainActivity extends AppCompatActivity {
+    private CameraSurfaceView cv;
+    private ScanLayout sl;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        cv = (CameraSurfaceView) findViewById(R.id.cv);
+        sl = (ScanLayout) findViewById(R.id.sl);
+        cv.setUpWithScanView(sl);
     }
 }
