@@ -69,15 +69,14 @@ public class CameraView extends TextureView implements TextureView.SurfaceTextur
     }
 
     @Override
-    public void onGetetResult(final String result) {
+    public void onGetetResult(final DecoderHander.Result result) {
         if (result != null) {
-            if (mUpWithScanView != null) {
-                mUpWithScanView.stopScan();
-            }
+
+
             post(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(getContext(), result, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), result.result, Toast.LENGTH_SHORT).show();
                 }
             });
             postDelayed(new Runnable() {

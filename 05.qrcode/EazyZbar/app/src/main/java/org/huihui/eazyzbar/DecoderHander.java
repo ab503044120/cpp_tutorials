@@ -1,10 +1,10 @@
 package org.huihui.eazyzbar;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
-import android.util.Log;
 
 import net.sourceforge.zbar.Config;
 import net.sourceforge.zbar.Image;
@@ -52,7 +52,26 @@ public class DecoderHander {
                 SymbolSet syms = scanner.getResults();
                 for (Symbol sym : syms) {
                     if (mGetResultListener != null) {
-                        mGetResultListener.onGetetResult(sym.getData());
+                        Result result1 = new Result();
+//                        BitmapFactory.Options options = new BitmapFactory.Options();
+//                        options.inPreferredConfig = Bitmap.Config.RGB_565;
+//                        BitmapFactory.Options newOpts = new BitmapFactory.Options();
+//                        newOpts.inJustDecodeBounds = true;
+//                        YuvImage yuvimage = new YuvImage(
+//                                data,
+//                                ImageFormat.NV21,
+//                                width,
+//                                height,
+//                                null);
+//                        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//                        yuvimage.compressToJpeg(new Rect(0, 0, width, height), 100, baos);// 80--JPG图片的质量[0-100],100最高
+//                        byte[] rawImage = baos.toByteArray();
+//                        //将rawImage转换成bitmap
+//                        Bitmap bitmap = BitmapFactory.decodeByteArray(rawImage, 0, rawImage.length, options);
+//                        Bitmap bitmap1 = Bitmap.createBitmap(bitmap, width / 2 - height / 4, height / 4, height / 2, height / 2);
+//                        result1.mBitmap = bitmap1;
+                        result1.result = sym.getData();
+                        mGetResultListener.onGetetResult(result1);
                     }
                 }
             } else {
@@ -80,10 +99,16 @@ public class DecoderHander {
 
 
     public void release() {
+        scanner.destroy();
         mHandler.removeCallbacksAndMessages(null);
     }
 
     public interface GetResultListener {
-        void onGetetResult(String result);
+        void onGetetResult(Result result);
+    }
+
+    public static class Result {
+        public String result;
+        Bitmap mBitmap;
     }
 }

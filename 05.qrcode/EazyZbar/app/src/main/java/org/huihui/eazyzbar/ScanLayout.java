@@ -3,6 +3,7 @@ package org.huihui.eazyzbar;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
@@ -16,6 +17,7 @@ public class ScanLayout extends FrameLayout implements IScanView {
     private Paint mPaint;
     private ValueAnimator mValueAnimator;
     private int mAnimatedValue;
+    private Bitmap mBitmap;
 
     public ScanLayout(Context context) {
         this(context, null);
@@ -55,6 +57,10 @@ public class ScanLayout extends FrameLayout implements IScanView {
         if (mAnimatedValue != 0) {
             canvas.drawLine(getMeasuredWidth() / 4, getMeasuredHeight() / 2, getMeasuredWidth() * 3 / 4, getMeasuredHeight() / 2, mPaint);
         }
+        if (mBitmap != null) {
+            canvas.drawBitmap(mBitmap, 0, 0, mPaint);
+            mBitmap = null;
+        }
     }
 
     public void startScan() {
@@ -66,6 +72,17 @@ public class ScanLayout extends FrameLayout implements IScanView {
                 }
             });
         }
+    }
+
+    @Override
+    public void showResult(final Bitmap bitmap) {
+        post(new Runnable() {
+            @Override
+            public void run() {
+                mBitmap = bitmap;
+                invalidate();
+            }
+        });
     }
 
     public void stopScan() {
