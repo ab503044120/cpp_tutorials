@@ -99,7 +99,6 @@ public class DecoderHander {
 
 
     public void release() {
-        scanner.destroy();
         mHandler.removeCallbacksAndMessages(null);
     }
 
