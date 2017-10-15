@@ -15,11 +15,13 @@
  */
 package com.yanzhenjie.zbar.camera;
 
+import android.content.Context;
 import android.hardware.Camera;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.TypedValue;
 
 import com.yanzhenjie.zbar.Config;
 import com.yanzhenjie.zbar.Image;
@@ -35,6 +37,7 @@ import java.util.concurrent.Executors;
  */
 class CameraScanAnalysis implements Camera.PreviewCallback {
 
+    private final Context mContext;
     private ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     private ImageScanner mImageScanner;
@@ -44,7 +47,8 @@ class CameraScanAnalysis implements Camera.PreviewCallback {
     private boolean allowAnalysis = true;
     private Image barcode;
 
-    CameraScanAnalysis() {
+    CameraScanAnalysis(Context context) {
+        mContext = context;
         mImageScanner = new ImageScanner();
         mImageScanner.setConfig(0, Config.X_DENSITY, 3);
         mImageScanner.setConfig(0, Config.Y_DENSITY, 3);
@@ -78,6 +82,10 @@ class CameraScanAnalysis implements Camera.PreviewCallback {
 
             barcode = new Image(size.width, size.height, "Y800");
             barcode.setData(data);
+            int v = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 250, mContext.getResources().getDisplayMetrics());
+            int startX = (size.width - v) / 2;
+            int startY = ((size.height - v)/2);
+            barcode.setCrop(startX,startY,v,v);
             // barcode.setCrop(startX, startY, width, height);
 
             executorService.execute(mAnalysisTask);

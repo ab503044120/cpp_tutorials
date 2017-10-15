@@ -1,77 +1,70 @@
 package org.huihui.eazyzbar;
 
 import android.content.Context;
-import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.util.AttributeSet;
-import android.view.TextureView;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 import android.widget.Toast;
 
 /**
- * Created by Administrator on 2017/9/27.
+ * Created by Administrator on 2017/9/28.
  */
 
-public class CameraView extends TextureView implements TextureView.SurfaceTextureListener, Camera.PreviewCallback, DecoderHander.GetResultListener {
-    private SurfaceTexture mSurface;
+public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Callback, Camera.PreviewCallback, DecoderHander.GetResultListener {
     private DecoderHander mDecoderHander;
     private IScanView mUpWithScanView;
 
-    public CameraView(Context context) {
+    public CameraSurfaceView(Context context) {
         this(context, null);
     }
 
-    public CameraView(Context context, AttributeSet attrs) {
+    public CameraSurfaceView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CameraView(Context context, AttributeSet attrs, int defStyle) {
+    public CameraSurfaceView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setSurfaceTextureListener(this);
+        getHolder().addCallback(this);
     }
 
-
     @Override
-    public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
-        mSurface = surface;
+    public void surfaceCreated(final SurfaceHolder holder) {
         CameraInterface.getInstance().doOpenCamera(new CameraInterface.CamOpenOverCallback() {
             @Override
             public void cameraHasOpened() {
-                CameraInterface.getInstance().doStartPreview(mSurface, 16.0f / 9.0f, CameraView.this);
-                mDecoderHander = new DecoderHander(CameraView.this);
+                CameraInterface.getInstance().doStartPreview(holder, 16.0f / 9.0f, CameraSurfaceView.this);
+                mDecoderHander = new DecoderHander(CameraSurfaceView.this);
             }
         });
     }
 
     @Override
-    public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int width, int height) {
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 
     }
 
     @Override
-    public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
-        mSurface = null;
+    public void surfaceDestroyed(SurfaceHolder holder) {
         mDecoderHander.release();
         CameraInterface.getInstance().doStopCamera();
-        return false;
-    }
-
-    @Override
-    public void onSurfaceTextureUpdated(SurfaceTexture surface) {
-        mSurface = surface;
     }
 
     @Override
     public void onPreviewFrame(byte[] data, Camera camera) {
+        camera.setPreviewCallback(null);
         Camera.Parameters parameters = camera.getParameters();
         Camera.Size size = parameters.getPreviewSize();
-        camera.setPreviewCallback(null);
         mDecoderHander.sendMsg(data, size.width, size.height);
     }
 
     @Override
     public void onGetetResult(final DecoderHander.Result result) {
         if (result != null) {
-
+            if (mUpWithScanView != null) {
+                mUpWithScanView.stopScan();
+                mUpWithScanView.showResult(result.mBitmap);
+            }
 
             post(new Runnable() {
                 @Override
@@ -93,14 +86,13 @@ public class CameraView extends TextureView implements TextureView.SurfaceTextur
                 }
             });
         }
-
     }
 
     private void resumeScan() {
         if (mUpWithScanView != null) {
             mUpWithScanView.startScan();
         }
-        CameraInterface.getInstance().resumePreview(CameraView.this);
+        CameraInterface.getInstance().resumePreview(CameraSurfaceView.this);
     }
 
     public void setUpWithScanView(IScanView upWithScanView) {

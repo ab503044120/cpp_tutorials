@@ -47,7 +47,7 @@ public class CameraInterface {
 
     }
 
-    public void doStartPreview(SurfaceHolder holder, float previewRate) {
+    public void doStartPreview(SurfaceHolder holder, float previewRate, Camera.PreviewCallback previewCallback) {
         if (isPreviewing) {
             mCamera.stopPreview();
             return;
@@ -60,6 +60,7 @@ public class CameraInterface {
                 e.printStackTrace();
             }
             initCamera(previewRate);
+            mCamera.setPreviewCallback(previewCallback);
         }
 
 
