@@ -32,10 +32,14 @@ Java_org_huihui_pthread_MainActivity_startThread(JNIEnv *env, jobject instance, 
     pthread_create(&pthread, NULL, (void *(*)(void *)) log, NULL);
     __android_log_print(ANDROID_LOG_ERROR, "native", "在进程:%d,创建线程成功", getpid());
   }
+  FILE* file = fopen(strPath,"w+");
+    char* str;
+    sprintf(str,"当前进程:%d--父进程:%d\n\r", getpid(), getppid());
+    fwrite(str, sizeof(char),strlen(str),file);
 }
 
 void log() {
-  FILE* file = fopen(strPath,"rw");
+  FILE* file = fopen(strPath,"w+");
   while (true) {
     char* str;
     sprintf(str,"当前进程:%d--父进程:%d\n\r", getpid(), getppid());
