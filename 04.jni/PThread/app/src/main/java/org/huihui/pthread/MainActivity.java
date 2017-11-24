@@ -1,8 +1,9 @@
 package org.huihui.pthread;
 
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
-        startThread(Environment.getExternalStorageDirectory()+"/a.txt");
+        startThread(Environment.getExternalStorageDirectory() + "/a.txt");
+        Log.e("pthread", "Activity" + getApplicationContext().toString());
     }
 
     /**
