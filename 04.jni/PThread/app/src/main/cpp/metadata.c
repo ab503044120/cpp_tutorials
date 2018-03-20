@@ -30,7 +30,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <openssl/md5.h>
+#include "include/openssl/md5.h"
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>

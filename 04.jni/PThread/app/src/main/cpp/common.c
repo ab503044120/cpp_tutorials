@@ -29,11 +29,11 @@
 #include <stdlib.h>
 #include <memory.h>
 #include <unistd.h>
-#include <openssl/rsa.h>
-#include <openssl/pem.h>
-#include <openssl/evp.h>
-#include <openssl/bio.h>
-#include <openssl/buffer.h>
+#include "include/openssl/rsa.h"
+#include "include/openssl/pem.h"
+#include "include/openssl/evp.h"
+#include "include/openssl/bio.h"
+#include "include/openssl/buffer.h"
 #include "common.h"
 #include "daemon.h"
 

@@ -39,7 +39,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
-#include <openssl/md5.h>
+#include "include/openssl/md5.h"
 
 #include "common.h"
 #include "player.h"

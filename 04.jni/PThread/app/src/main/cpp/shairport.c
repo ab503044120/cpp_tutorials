@@ -29,7 +29,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <memory.h>
-#include <openssl/md5.h>
+#include "include/openssl/md5.h"
 #include <sys/wait.h>
 #include <getopt.h>
 #include "common.h"
