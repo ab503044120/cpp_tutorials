@@ -34,10 +34,19 @@ CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj: ../PORT/os_cpu.h
 CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj: ../PORT/os_trace.c
 CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj: ../PORT/os_trace.h
 
-CMakeFiles/06_ucosii.dir/test.c.obj: ../CONFIG/SystemConfig.h
-CMakeFiles/06_ucosii.dir/test.c.obj: ../CONFIG/includes.h
-CMakeFiles/06_ucosii.dir/test.c.obj: ../CORE/os_cfg_r.h
-CMakeFiles/06_ucosii.dir/test.c.obj: ../CORE/ucos_ii.h
-CMakeFiles/06_ucosii.dir/test.c.obj: ../PORT/os_cpu.h
-CMakeFiles/06_ucosii.dir/test.c.obj: ../test.c
+CMakeFiles/06_ucosii.dir/main.c.obj: ../CONFIG/SystemConfig.h
+CMakeFiles/06_ucosii.dir/main.c.obj: ../CONFIG/includes.h
+CMakeFiles/06_ucosii.dir/main.c.obj: ../CORE/os_cfg_r.h
+CMakeFiles/06_ucosii.dir/main.c.obj: ../CORE/ucos_ii.h
+CMakeFiles/06_ucosii.dir/main.c.obj: ../PORT/os_cpu.h
+CMakeFiles/06_ucosii.dir/main.c.obj: ../user/usercode.h
+CMakeFiles/06_ucosii.dir/main.c.obj: ../main.c
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../CONFIG/SystemConfig.h
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../CONFIG/includes.h
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../CORE/os_cfg_r.h
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../CORE/ucos_ii.h
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../PORT/os_cpu.h
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../user/usercode.h
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../user/usercode.c
 

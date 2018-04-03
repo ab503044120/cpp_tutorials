@@ -56,35 +56,60 @@ include CMakeFiles/06_ucosii.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/06_ucosii.dir/flags.make
 
-CMakeFiles/06_ucosii.dir/test.c.obj: CMakeFiles/06_ucosii.dir/flags.make
-CMakeFiles/06_ucosii.dir/test.c.obj: CMakeFiles/06_ucosii.dir/includes_C.rsp
-CMakeFiles/06_ucosii.dir/test.c.obj: ../test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/06_ucosii.dir/test.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\06_ucosii.dir\test.c.obj   -c E:\code\cpp_tutorials\06.ucosii\test.c
+CMakeFiles/06_ucosii.dir/main.c.obj: CMakeFiles/06_ucosii.dir/flags.make
+CMakeFiles/06_ucosii.dir/main.c.obj: CMakeFiles/06_ucosii.dir/includes_C.rsp
+CMakeFiles/06_ucosii.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/06_ucosii.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\06_ucosii.dir\main.c.obj   -c E:\code\cpp_tutorials\06.ucosii\main.c
 
-CMakeFiles/06_ucosii.dir/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/06_ucosii.dir/test.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\code\cpp_tutorials\06.ucosii\test.c > CMakeFiles\06_ucosii.dir\test.c.i
+CMakeFiles/06_ucosii.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/06_ucosii.dir/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\code\cpp_tutorials\06.ucosii\main.c > CMakeFiles\06_ucosii.dir\main.c.i
 
-CMakeFiles/06_ucosii.dir/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/06_ucosii.dir/test.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\code\cpp_tutorials\06.ucosii\test.c -o CMakeFiles\06_ucosii.dir\test.c.s
+CMakeFiles/06_ucosii.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/06_ucosii.dir/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\code\cpp_tutorials\06.ucosii\main.c -o CMakeFiles\06_ucosii.dir\main.c.s
 
-CMakeFiles/06_ucosii.dir/test.c.obj.requires:
+CMakeFiles/06_ucosii.dir/main.c.obj.requires:
 
-.PHONY : CMakeFiles/06_ucosii.dir/test.c.obj.requires
+.PHONY : CMakeFiles/06_ucosii.dir/main.c.obj.requires
 
-CMakeFiles/06_ucosii.dir/test.c.obj.provides: CMakeFiles/06_ucosii.dir/test.c.obj.requires
-	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/test.c.obj.provides.build
-.PHONY : CMakeFiles/06_ucosii.dir/test.c.obj.provides
+CMakeFiles/06_ucosii.dir/main.c.obj.provides: CMakeFiles/06_ucosii.dir/main.c.obj.requires
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/main.c.obj.provides.build
+.PHONY : CMakeFiles/06_ucosii.dir/main.c.obj.provides
 
-CMakeFiles/06_ucosii.dir/test.c.obj.provides.build: CMakeFiles/06_ucosii.dir/test.c.obj
+CMakeFiles/06_ucosii.dir/main.c.obj.provides.build: CMakeFiles/06_ucosii.dir/main.c.obj
+
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: CMakeFiles/06_ucosii.dir/flags.make
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: CMakeFiles/06_ucosii.dir/includes_C.rsp
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj: ../user/usercode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/06_ucosii.dir/user/usercode.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\06_ucosii.dir\user\usercode.c.obj   -c E:\code\cpp_tutorials\06.ucosii\user\usercode.c
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/06_ucosii.dir/user/usercode.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\code\cpp_tutorials\06.ucosii\user\usercode.c > CMakeFiles\06_ucosii.dir\user\usercode.c.i
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/06_ucosii.dir/user/usercode.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\code\cpp_tutorials\06.ucosii\user\usercode.c -o CMakeFiles\06_ucosii.dir\user\usercode.c.s
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj.requires:
+
+.PHONY : CMakeFiles/06_ucosii.dir/user/usercode.c.obj.requires
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj.provides: CMakeFiles/06_ucosii.dir/user/usercode.c.obj.requires
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/user/usercode.c.obj.provides.build
+.PHONY : CMakeFiles/06_ucosii.dir/user/usercode.c.obj.provides
+
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj.provides.build: CMakeFiles/06_ucosii.dir/user/usercode.c.obj
 
 
 CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj: CMakeFiles/06_ucosii.dir/flags.make
 CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj: CMakeFiles/06_ucosii.dir/includes_C.rsp
 CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj: ../CORE/ucos_ii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\06_ucosii.dir\CORE\ucos_ii.c.obj   -c E:\code\cpp_tutorials\06.ucosii\CORE\ucos_ii.c
 
 CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.i: cmake_force
@@ -109,7 +134,7 @@ CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj.provides.build: CMakeFiles/06_ucosii
 CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj: CMakeFiles/06_ucosii.dir/flags.make
 CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj: CMakeFiles/06_ucosii.dir/includes_C.rsp
 CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj: ../PORT/os_cpu_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\06_ucosii.dir\PORT\os_cpu_c.c.obj   -c E:\code\cpp_tutorials\06.ucosii\PORT\os_cpu_c.c
 
 CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.i: cmake_force
@@ -134,7 +159,7 @@ CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj.provides.build: CMakeFiles/06_ucosi
 CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj: CMakeFiles/06_ucosii.dir/flags.make
 CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj: CMakeFiles/06_ucosii.dir/includes_C.rsp
 CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj: ../PORT/os_trace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\06_ucosii.dir\PORT\os_trace.c.obj   -c E:\code\cpp_tutorials\06.ucosii\PORT\os_trace.c
 
 CMakeFiles/06_ucosii.dir/PORT/os_trace.c.i: cmake_force
@@ -158,7 +183,8 @@ CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj.provides.build: CMakeFiles/06_ucosi
 
 # Object files for target 06_ucosii
 06_ucosii_OBJECTS = \
-"CMakeFiles/06_ucosii.dir/test.c.obj" \
+"CMakeFiles/06_ucosii.dir/main.c.obj" \
+"CMakeFiles/06_ucosii.dir/user/usercode.c.obj" \
 "CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj" \
 "CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj" \
 "CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj"
@@ -166,7 +192,8 @@ CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj.provides.build: CMakeFiles/06_ucosi
 # External object files for target 06_ucosii
 06_ucosii_EXTERNAL_OBJECTS =
 
-06_ucosii.exe: CMakeFiles/06_ucosii.dir/test.c.obj
+06_ucosii.exe: CMakeFiles/06_ucosii.dir/main.c.obj
+06_ucosii.exe: CMakeFiles/06_ucosii.dir/user/usercode.c.obj
 06_ucosii.exe: CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj
 06_ucosii.exe: CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj
 06_ucosii.exe: CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj
@@ -174,7 +201,7 @@ CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj.provides.build: CMakeFiles/06_ucosi
 06_ucosii.exe: CMakeFiles/06_ucosii.dir/linklibs.rsp
 06_ucosii.exe: CMakeFiles/06_ucosii.dir/objects1.rsp
 06_ucosii.exe: CMakeFiles/06_ucosii.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable 06_ucosii.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\code\cpp_tutorials\06.ucosii\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable 06_ucosii.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\06_ucosii.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -182,7 +209,8 @@ CMakeFiles/06_ucosii.dir/build: 06_ucosii.exe
 
 .PHONY : CMakeFiles/06_ucosii.dir/build
 
-CMakeFiles/06_ucosii.dir/requires: CMakeFiles/06_ucosii.dir/test.c.obj.requires
+CMakeFiles/06_ucosii.dir/requires: CMakeFiles/06_ucosii.dir/main.c.obj.requires
+CMakeFiles/06_ucosii.dir/requires: CMakeFiles/06_ucosii.dir/user/usercode.c.obj.requires
 CMakeFiles/06_ucosii.dir/requires: CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj.requires
 CMakeFiles/06_ucosii.dir/requires: CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj.requires
 CMakeFiles/06_ucosii.dir/requires: CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj.requires

@@ -15,7 +15,6 @@
 #include    <ctype.h>
 #include    <stdlib.h>
 #include    <ucos_ii.h>
-
 #if OS_VIEW_MODULE
 #include    <os_viewc.h>
 #include    <os_view.h>

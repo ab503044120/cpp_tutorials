@@ -34,10 +34,19 @@ CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj
  ../PORT/os_cpu.h
  E:/code/cpp_tutorials/06.ucosii/PORT/os_trace.c
  E:/code/cpp_tutorials/06.ucosii/PORT/os_trace.h
-CMakeFiles/06_ucosii.dir/test.c.obj
+CMakeFiles/06_ucosii.dir/main.c.obj
  ../CONFIG/SystemConfig.h
  ../CONFIG/includes.h
  ../CORE/os_cfg_r.h
  ../CORE/ucos_ii.h
  ../PORT/os_cpu.h
- E:/code/cpp_tutorials/06.ucosii/test.c
+ ../user/usercode.h
+ E:/code/cpp_tutorials/06.ucosii/main.c
+CMakeFiles/06_ucosii.dir/user/usercode.c.obj
+ ../CONFIG/SystemConfig.h
+ ../CONFIG/includes.h
+ ../CORE/os_cfg_r.h
+ ../CORE/ucos_ii.h
+ ../PORT/os_cpu.h
+ ../user/usercode.h
+ E:/code/cpp_tutorials/06.ucosii/user/usercode.c

@@ -86,6 +86,10 @@ stdio.h
 windows.h
 -
 
+../user/usercode.h
+ucos_ii.h
+-
+
 E:/code/cpp_tutorials/06.ucosii/CORE/ucos_ii.c
 ucos_ii.h
 -
@@ -128,7 +132,15 @@ E:/code/cpp_tutorials/06.ucosii/PORT/os_trace.h
 
 E:/code/cpp_tutorials/06.ucosii/PORT/os_trace.h
 
-E:/code/cpp_tutorials/06.ucosii/test.c
-SystemConfig.h
-E:/code/cpp_tutorials/06.ucosii/SystemConfig.h
+E:/code/cpp_tutorials/06.ucosii/main.c
+includes.h
+-
+usercode.h
+-
+
+E:/code/cpp_tutorials/06.ucosii/user/usercode.c
+includes.h
+-
+usercode.h
+-
 

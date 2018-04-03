@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/06_ucosii.dir/test.c.obj"
+  "CMakeFiles/06_ucosii.dir/main.c.obj"
+  "CMakeFiles/06_ucosii.dir/user/usercode.c.obj"
   "CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj"
   "CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj"
   "CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj"

@@ -203,32 +203,59 @@ PORT/os_trace.c.s:
 	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/PORT/os_trace.c.s
 .PHONY : PORT/os_trace.c.s
 
-test.obj: test.c.obj
+main.obj: main.c.obj
 
-.PHONY : test.obj
+.PHONY : main.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/test.c.obj
-.PHONY : test.c.obj
+main.c.obj:
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/main.c.obj
+.PHONY : main.c.obj
 
-test.i: test.c.i
+main.i: main.c.i
 
-.PHONY : test.i
+.PHONY : main.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/test.c.i
-.PHONY : test.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/main.c.i
+.PHONY : main.c.i
 
-test.s: test.c.s
+main.s: main.c.s
 
-.PHONY : test.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/test.c.s
-.PHONY : test.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/main.c.s
+.PHONY : main.c.s
+
+user/usercode.obj: user/usercode.c.obj
+
+.PHONY : user/usercode.obj
+
+# target to build an object file
+user/usercode.c.obj:
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/user/usercode.c.obj
+.PHONY : user/usercode.c.obj
+
+user/usercode.i: user/usercode.c.i
+
+.PHONY : user/usercode.i
+
+# target to preprocess a source file
+user/usercode.c.i:
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/user/usercode.c.i
+.PHONY : user/usercode.c.i
+
+user/usercode.s: user/usercode.c.s
+
+.PHONY : user/usercode.s
+
+# target to generate assembly for a file
+user/usercode.c.s:
+	$(MAKE) -f CMakeFiles\06_ucosii.dir\build.make CMakeFiles/06_ucosii.dir/user/usercode.c.s
+.PHONY : user/usercode.c.s
 
 # Help Target
 help:
@@ -248,9 +275,12 @@ help:
 	@echo ... PORT/os_trace.obj
 	@echo ... PORT/os_trace.i
 	@echo ... PORT/os_trace.s
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... user/usercode.obj
+	@echo ... user/usercode.i
+	@echo ... user/usercode.s
 .PHONY : help
 
 

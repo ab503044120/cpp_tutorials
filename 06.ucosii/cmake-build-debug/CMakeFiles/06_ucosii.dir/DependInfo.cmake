@@ -7,7 +7,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "E:/code/cpp_tutorials/06.ucosii/CORE/ucos_ii.c" "E:/code/cpp_tutorials/06.ucosii/cmake-build-debug/CMakeFiles/06_ucosii.dir/CORE/ucos_ii.c.obj"
   "E:/code/cpp_tutorials/06.ucosii/PORT/os_cpu_c.c" "E:/code/cpp_tutorials/06.ucosii/cmake-build-debug/CMakeFiles/06_ucosii.dir/PORT/os_cpu_c.c.obj"
   "E:/code/cpp_tutorials/06.ucosii/PORT/os_trace.c" "E:/code/cpp_tutorials/06.ucosii/cmake-build-debug/CMakeFiles/06_ucosii.dir/PORT/os_trace.c.obj"
-  "E:/code/cpp_tutorials/06.ucosii/test.c" "E:/code/cpp_tutorials/06.ucosii/cmake-build-debug/CMakeFiles/06_ucosii.dir/test.c.obj"
+  "E:/code/cpp_tutorials/06.ucosii/main.c" "E:/code/cpp_tutorials/06.ucosii/cmake-build-debug/CMakeFiles/06_ucosii.dir/main.c.obj"
+  "E:/code/cpp_tutorials/06.ucosii/user/usercode.c" "E:/code/cpp_tutorials/06.ucosii/cmake-build-debug/CMakeFiles/06_ucosii.dir/user/usercode.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,6 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../CONFIG"
   "../CORE"
   "../PORT"
+  "../user"
   )
 
 # Targets to which this target links.
