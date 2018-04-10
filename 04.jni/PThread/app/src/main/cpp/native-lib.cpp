@@ -25,14 +25,14 @@ JNIEXPORT void JNICALL
 Java_org_huihui_pthread_MainActivity_startThread(JNIEnv *env, jobject instance, jstring path) {
   strPath = env->GetStringUTFChars(path, NULL);
   __android_log_print(ANDROID_LOG_ERROR, "pthread", "主进程:%d", getpid());
-  int pid = fork();
-  __android_log_print(ANDROID_LOG_ERROR, "pthread", "创建的进程:%d", pid);
+//  int pid = fork();
+//  __android_log_print(ANDROID_LOG_ERROR, "pthread", "创建的进程:%d", pid);
   __android_log_print(ANDROID_LOG_ERROR, "pthread", "当前进程:%d", getpid());
-  if (pid == 0) {
+//  if (pid == 0) {
     pthread_t pthread;
     int thread_id = pthread_create(&pthread, NULL, log, NULL);
     __android_log_print(ANDROID_LOG_ERROR, "pthread", "在进程:%d,创建线程:%d成功", getpid(), thread_id);
-  }
+//  }
 //  FILE *file = fopen(strPath, "a+");
 //  char *str = (char *) malloc(50 * sizeof(char));
 //  sprintf(str, "当前进程:%d--父进程:%d\n\r\0", getpid(), getppid());
