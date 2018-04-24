@@ -8,4 +8,8 @@ public class AirPlay {
     public native boolean stop();
 
     private native boolean unInit();
+
+    public void onMsg(byte[] bytes, long length) {
+
+    }
 }
