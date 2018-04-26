@@ -43,7 +43,7 @@ Java_org_huihui_pthread_MainActivity_startThread(JNIEnv *env, jobject instance, 
 
 void *log(void *pvoid) {
   FILE *file = fopen(strPath, "a+");
-  while (1) {
+//  while (1) {
     char *str = (char *) malloc(50 * sizeof(char));
     sprintf(str, "当前进程:%d--父进程:%d\n\r", getpid(), getppid());
     fwrite(str, sizeof(char), strlen(str), file);
@@ -51,6 +51,6 @@ void *log(void *pvoid) {
     __android_log_print(ANDROID_LOG_ERROR, "pthread", "当前进程:%d--父进程:%d", getpid(), getppid());
     free(str);
     sleep(1);
-  }
+//  }
   return (void *) 100;
 }

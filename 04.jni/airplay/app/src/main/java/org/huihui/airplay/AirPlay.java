@@ -1,6 +1,9 @@
 package org.huihui.airplay;
 
 public class AirPlay {
+    static {
+        System.loadLibrary("native-lib");
+    }
     public native int init(int port, String hardwareAddr);
 
     private native boolean start();
