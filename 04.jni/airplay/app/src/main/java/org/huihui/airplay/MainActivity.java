@@ -33,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }).start();
-        new AirPlay().init(80,"111");
+        AirPlay airPlay = new AirPlay();
+        airPlay.init(80,"111");
+        airPlay.start();
     }
 
     /**
