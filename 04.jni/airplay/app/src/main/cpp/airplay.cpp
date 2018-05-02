@@ -74,12 +74,16 @@ void *threadFun(void *) {
     log("erro accept");
   }
   log("sucess accept");
-  char buffer[1000];
+  char buffer[10];
   ssize_t recvSize;
   ssize_t sentSize;
   while (true) {
-    ssize_t recvSize = recv(clientSocket, buffer, 1000 - 1, 0);
-    log(buffer);
+    if (recv(clientSocket, buffer, 10-1, 0) > 0) {
+      log(buffer);
+    } else {
+      log("disconnect");
+      break;
+    }
   }
 
   return (void *) 1;
